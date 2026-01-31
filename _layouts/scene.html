@@ -3,6 +3,30 @@ layout: default
 ---
 
 <article class="scene" itemscope itemtype="http://schema.org/Article">
+  
+  {% comment %} Story So Far - collapsible summary {% endcomment %}
+  {% if site.data.story_state.narrative.previous_scene_summary or page.chapter > 1 %}
+  <details class="story-so-far">
+    <summary>📖 Story So Far</summary>
+    <div class="story-so-far-content">
+      {% if site.data.story_state.plot.arc_summary %}
+      <p class="arc-summary"><strong>The Tale:</strong> {{ site.data.story_state.plot.arc_summary | strip_newlines }}</p>
+      {% endif %}
+      
+      {% if site.data.story_state.plot.events.size > 0 %}
+      <div class="events-list">
+        <strong>What's Happened:</strong>
+        <ul>
+        {% for event in site.data.story_state.plot.events %}
+          <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </details>
+  {% endif %}
+
   {% if page.image %}
   <div class="scene-image">
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
@@ -40,11 +64,23 @@ layout: default
   {% endif %}
 
   <nav class="scene-navigation">
-    {% if page.previous %}
-    <a class="prev-scene" href="{{ page.previous | relative_url }}">&larr; Previous</a>
+    {% if page.previous in site.posts %}
+      <a class="prev-scene" href="{{ page.previous.url | relative_url }}">&larr; Previous</a>
+    {% elsif page.previous %}
+      <a class="prev-scene" href="{{ page.previous | relative_url }}">&larr; Previous</a>
     {% endif %}
-    {% if page.next %}
-    <a class="next-scene" href="{{ page.next | relative_url }}">Next &rarr;</a>
-    {% endif %}
+    
+    {% assign sorted_posts = site.posts | sort: 'date' %}
+    {% for post in sorted_posts %}
+      {% if post.url == page.url %}
+        {% if forloop.index > 1 %}
+          {% assign prev_idx = forloop.index | minus: 2 %}
+          <a class="prev-scene" href="{{ sorted_posts[prev_idx].url | relative_url }}">&larr; {{ sorted_posts[prev_idx].title }}</a>
+        {% endif %}
+        {% if forloop.index < sorted_posts.size %}
+          <a class="next-scene" href="{{ sorted_posts[forloop.index].url | relative_url }}">{{ sorted_posts[forloop.index].title }} &rarr;</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   </nav>
 </article>

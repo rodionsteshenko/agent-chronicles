@@ -308,3 +308,185 @@ body {
     font-size: 3rem;
   }
 }
+
+/* Story So Far - Collapsible Summary */
+.story-so-far {
+  margin-bottom: 2rem;
+  border: 1px solid var(--parchment-dark);
+  border-radius: 8px;
+  background: rgba(139, 69, 19, 0.05);
+}
+
+.story-so-far summary {
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  color: var(--accent);
+  list-style: none;
+}
+
+.story-so-far summary::-webkit-details-marker {
+  display: none;
+}
+
+.story-so-far summary::before {
+  content: '▶ ';
+  font-size: 0.8em;
+}
+
+.story-so-far[open] summary::before {
+  content: '▼ ';
+}
+
+.story-so-far-content {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.story-so-far .arc-summary {
+  margin-bottom: 1rem;
+  color: var(--ink-light);
+}
+
+.story-so-far .events-list {
+  margin-top: 1rem;
+}
+
+.story-so-far .events-list ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.story-so-far .events-list li {
+  margin-bottom: 0.5rem;
+  color: var(--ink-light);
+}
+
+.story-so-far .event-chapter {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Characters Page */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.character-card {
+  background: rgba(139, 69, 19, 0.05);
+  border: 1px solid var(--parchment-dark);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.character-card h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.character-role {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.character-description {
+  font-size: 0.95rem;
+  color: var(--ink-light);
+  line-height: 1.6;
+}
+
+.character-status {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.character-status.alive {
+  color: #2d7a3a;
+}
+
+.character-status.dead {
+  color: #8b3a3a;
+}
+
+.character-status.unknown {
+  color: var(--ink-light);
+}
+
+/* Story So Far Page */
+.events-timeline {
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid var(--accent);
+  margin-left: 0.5rem;
+}
+
+.events-timeline li {
+  padding: 1rem 0 1rem 1.5rem;
+  position: relative;
+}
+
+.events-timeline li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5px;
+  top: 1.25rem;
+}
+
+.events-timeline .significance {
+  color: var(--accent-gold);
+  margin-left: 0.5rem;
+}
+
+.thread-intro {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+.latest-scene-card {
+  background: rgba(139, 69, 19, 0.05);
+  border: 1px solid var(--parchment-dark);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.latest-scene-card h3 {
+  font-family: 'Cinzel', serif;
+  margin: 0.5rem 0;
+}
+
+.latest-scene-card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.latest-scene-card h3 a:hover {
+  color: var(--accent);
+}
+
+.latest-scene-card .read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+}
+
+.latest-scene-card .read-more:hover {
+  color: var(--ink);
+}
