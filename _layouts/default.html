@@ -44,12 +44,23 @@
           <p class="arc-summary"><strong>The Tale:</strong> {{ site.data.story_state.plot.arc_summary | strip_newlines }}</p>
           {% endif %}
           
-          {% if site.data.story_state.plot.events.size > 0 %}
+          {% comment %} Count events that match our filter {% endcomment %}
+          {% assign events_to_show = 0 %}
+          {% for event in site.data.story_state.plot.events %}
+            {% if page.chapter %}
+              {% if event.scene < page.chapter %}
+                {% assign events_to_show = events_to_show | plus: 1 %}
+              {% endif %}
+            {% else %}
+              {% assign events_to_show = events_to_show | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if events_to_show > 0 %}
           <div class="events-list">
             <strong>What's Happened:</strong>
             <ul>
             {% for event in site.data.story_state.plot.events %}
-              {% comment %} If on a chapter page, only show events BEFORE this chapter {% endcomment %}
               {% if page.chapter %}
                 {% if event.scene < page.chapter %}
                   <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
@@ -62,7 +73,19 @@
           </div>
           {% endif %}
           
-          {% if site.data.story_state.plot.active_threads.size > 0 %}
+          {% comment %} Count threads that match our filter {% endcomment %}
+          {% assign threads_to_show = 0 %}
+          {% for thread in site.data.story_state.plot.active_threads %}
+            {% if page.chapter %}
+              {% if thread.introduced < page.chapter %}
+                {% assign threads_to_show = threads_to_show | plus: 1 %}
+              {% endif %}
+            {% else %}
+              {% assign threads_to_show = threads_to_show | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if threads_to_show > 0 %}
           <div class="threads-list">
             <strong>Active Threads:</strong>
             <ul>
