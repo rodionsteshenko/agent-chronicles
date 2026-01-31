@@ -35,6 +35,53 @@
 
   <main class="page-content">
     <div class="wrapper">
+      {% comment %} Story So Far - collapsible summary on all pages {% endcomment %}
+      {% if site.data.story_state.meta.status != 'not_started' %}
+      <details class="story-so-far">
+        <summary>📖 Story So Far{% if page.chapter %} (up to Chapter {{ page.chapter }}){% endif %}</summary>
+        <div class="story-so-far-content">
+          {% if site.data.story_state.plot.arc_summary %}
+          <p class="arc-summary"><strong>The Tale:</strong> {{ site.data.story_state.plot.arc_summary | strip_newlines }}</p>
+          {% endif %}
+          
+          {% if site.data.story_state.plot.events.size > 0 %}
+          <div class="events-list">
+            <strong>What's Happened:</strong>
+            <ul>
+            {% for event in site.data.story_state.plot.events %}
+              {% comment %} If on a chapter page, only show events BEFORE this chapter {% endcomment %}
+              {% if page.chapter %}
+                {% if event.scene < page.chapter %}
+                  <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
+                {% endif %}
+              {% else %}
+                <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          
+          {% if site.data.story_state.plot.active_threads.size > 0 %}
+          <div class="threads-list">
+            <strong>Active Threads:</strong>
+            <ul>
+            {% for thread in site.data.story_state.plot.active_threads %}
+              {% if page.chapter %}
+                {% if thread.introduced < page.chapter %}
+                  <li>{{ thread.description }} <span class="thread-intro">(Ch. {{ thread.introduced }})</span></li>
+                {% endif %}
+              {% else %}
+                <li>{{ thread.description }} <span class="thread-intro">(Ch. {{ thread.introduced }})</span></li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </details>
+      {% endif %}
+      
       {{ content }}
     </div>
   </main>

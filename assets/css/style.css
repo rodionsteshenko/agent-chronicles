@@ -369,6 +369,20 @@ body {
   color: var(--accent);
 }
 
+.story-so-far .threads-list {
+  margin-top: 1rem;
+}
+
+.story-so-far .threads-list ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.story-so-far .threads-list li {
+  margin-bottom: 0.5rem;
+  color: var(--ink-light);
+}
+
 /* Characters Page */
 .characters-grid {
   display: grid;

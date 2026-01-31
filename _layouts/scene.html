@@ -3,29 +3,6 @@ layout: default
 ---
 
 <article class="scene" itemscope itemtype="http://schema.org/Article">
-  
-  {% comment %} Story So Far - collapsible summary {% endcomment %}
-  {% if site.data.story_state.narrative.previous_scene_summary or page.chapter > 1 %}
-  <details class="story-so-far">
-    <summary>📖 Story So Far</summary>
-    <div class="story-so-far-content">
-      {% if site.data.story_state.plot.arc_summary %}
-      <p class="arc-summary"><strong>The Tale:</strong> {{ site.data.story_state.plot.arc_summary | strip_newlines }}</p>
-      {% endif %}
-      
-      {% if site.data.story_state.plot.events.size > 0 %}
-      <div class="events-list">
-        <strong>What's Happened:</strong>
-        <ul>
-        {% for event in site.data.story_state.plot.events %}
-          <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-    </div>
-  </details>
-  {% endif %}
 
   {% if page.image %}
   <div class="scene-image">
