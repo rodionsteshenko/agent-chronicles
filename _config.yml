@@ -36,4 +36,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scripts/
-  - _data/story_state.yml
