@@ -36,3 +36,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scripts/
+
+# Force rebuild Sat Jan 31 10:19:00 EST 2026
