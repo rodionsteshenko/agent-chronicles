@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<article class="scene" itemscope itemtype="http://schema.org/Article">
+  {% if page.image %}
+  <div class="scene-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <header class="scene-header">
+    {% if page.chapter %}
+    <span class="chapter-marker">Chapter {{ page.chapter }}</span>
+    {% endif %}
+    <h1 class="scene-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="scene-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y at %-I:%M %p" }}
+      </time>
+      {% if page.location %}
+      <span class="scene-location">📍 {{ page.location }}</span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="scene-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if page.characters %}
+  <div class="scene-characters">
+    <h3>Characters in this scene</h3>
+    <ul>
+    {% for character in page.characters %}
+      <li>{{ character }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <nav class="scene-navigation">
+    {% if page.previous %}
+    <a class="prev-scene" href="{{ page.previous | relative_url }}">&larr; Previous</a>
+    {% endif %}
+    {% if page.next %}
+    <a class="next-scene" href="{{ page.next | relative_url }}">Next &rarr;</a>
+    {% endif %}
+  </nav>
+</article>

@@ -1,0 +1,65 @@
+# Agent Chronicles - Story State
+# This file tracks the narrative across scenes
+
+meta:
+  genre: fantasy
+  tone: epic
+  started: null
+  last_updated: null
+  total_scenes: 0
+  status: not_started  # not_started, in_progress, concluded
+
+world:
+  name: null
+  era: null
+  description: null
+  locations: []
+  # locations:
+  #   - name: The Ashen Keep
+  #     description: A crumbling fortress...
+  #     first_appeared: 1
+
+characters:
+  # Each character has:
+  # - name
+  # - role (protagonist, antagonist, ally, etc.)
+  # - description
+  # - first_appeared (scene number)
+  # - status (alive, dead, unknown)
+  # - arc_notes (list of developments)
+  protagonists: []
+  antagonists: []
+  supporting: []
+
+plot:
+  current_act: 1  # 1=setup, 2=confrontation, 3=resolution
+  current_chapter: 0
+  arc_summary: null
+  active_threads: []
+  # active_threads:
+  #   - id: thread_1
+  #     description: "The search for the lost artifact"
+  #     introduced: 1
+  #     status: active
+  resolved_threads: []
+  
+  # Key events that shape the story
+  events: []
+  # events:
+  #   - scene: 1
+  #     summary: "Hero discovers their power"
+  #     significance: major
+
+narrative:
+  # Helps maintain consistency
+  previous_scene_summary: null
+  current_tension_level: 0  # 1-10
+  pending_revelations: []
+  foreshadowing: []
+
+# Scene generation hints
+next_scene:
+  suggested_focus: null
+  characters_involved: []
+  location: null
+  tone: null

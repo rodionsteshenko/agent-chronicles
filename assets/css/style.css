@@ -1,0 +1,310 @@
+/* Agent Chronicles - Fantasy Theme */
+
+:root {
+  --parchment: #f4e4bc;
+  --parchment-dark: #e8d4a8;
+  --ink: #2c1810;
+  --ink-light: #4a3728;
+  --accent: #8b4513;
+  --accent-gold: #b8860b;
+  --shadow: rgba(44, 24, 16, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--ink);
+  background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 100%);
+  min-height: 100vh;
+}
+
+.parchment-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, var(--parchment) 0%, var(--parchment-dark) 100%);
+  z-index: -1;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+
+.wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+.site-header {
+  padding: 3rem 0 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.site-tagline {
+  font-style: italic;
+  color: var(--ink-light);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.site-nav {
+  margin-top: 1.5rem;
+}
+
+.site-nav a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  color: var(--ink-light);
+  text-decoration: none;
+  margin: 0 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* Main Content */
+.page-content {
+  padding: 2rem 0 4rem;
+  min-height: 60vh;
+}
+
+/* Scene/Chapter Styling */
+.scene-image {
+  margin: -2rem -2rem 2rem -2rem;
+  overflow: hidden;
+}
+
+.scene-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chapter-marker {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.scene-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--parchment-dark);
+}
+
+.scene-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.scene-meta {
+  font-size: 0.9rem;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+.scene-location {
+  margin-left: 1rem;
+}
+
+.scene-content {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.scene-content p {
+  margin-bottom: 1.5rem;
+  text-indent: 2rem;
+}
+
+.scene-content p:first-of-type {
+  text-indent: 0;
+}
+
+.scene-content p:first-of-type::first-letter {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  color: var(--accent);
+}
+
+.scene-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+  background: rgba(139, 69, 19, 0.05);
+}
+
+/* Scene Navigation */
+.scene-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--parchment-dark);
+}
+
+.scene-navigation a {
+  font-family: 'Cinzel', serif;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.scene-navigation a:hover {
+  color: var(--ink);
+}
+
+/* Characters */
+.scene-characters {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(139, 69, 19, 0.05);
+  border-radius: 4px;
+}
+
+.scene-characters h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.scene-characters ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.scene-characters li {
+  font-size: 0.95rem;
+  color: var(--ink-light);
+}
+
+/* Index Page - Tale List */
+.tale-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-style: italic;
+  color: var(--ink-light);
+}
+
+.scene-list {
+  list-style: none;
+}
+
+.scene-list-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--parchment-dark);
+}
+
+.scene-list-item:last-child {
+  border-bottom: none;
+}
+
+.scene-list-item h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.scene-list-item h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.scene-list-item h2 a:hover {
+  color: var(--accent);
+}
+
+.scene-list-item .excerpt {
+  color: var(--ink-light);
+  margin-top: 0.75rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 2px solid var(--accent);
+  margin-top: 2rem;
+}
+
+.footer-text {
+  font-style: italic;
+  color: var(--ink-light);
+  font-size: 0.95rem;
+}
+
+.footer-meta {
+  font-size: 0.8rem;
+  color: var(--ink-light);
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 1.8rem;
+  }
+  
+  .scene-title {
+    font-size: 1.5rem;
+  }
+  
+  .wrapper {
+    padding: 0 1.25rem;
+  }
+  
+  .scene-content p:first-of-type::first-letter {
+    font-size: 3rem;
+  }
+}

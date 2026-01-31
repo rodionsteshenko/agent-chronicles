@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+
+  <!-- Google Fonts: Cinzel (fantasy headers) + Crimson Pro (readable body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+  <div class="parchment-bg"></div>
+  
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <p class="site-tagline">{{ site.description }}</p>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">The Tale</a>
+        <a href="{{ '/characters/' | relative_url }}">Characters</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p class="footer-text">This tale unfolds autonomously, scene by scene.</p>
+      <p class="footer-meta">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </div>
+  </footer>
+</body>
+</html>
