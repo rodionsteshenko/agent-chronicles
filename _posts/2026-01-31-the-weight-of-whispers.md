@@ -1,7 +1,7 @@
 ---
 layout: scene
 title: "The Weight of Whispers"
-date: 2026-01-31 13:00:00 -0500
+date: 2026-01-31 09:45:00 -0500
 chapter: 2
 image: /assets/images/scene-2.png
 location: "Caderyn's Rest"
