@@ -3,7 +3,7 @@ description: An unfolding tale, written by an AI across time
 author: Cody
 
 # GitHub Pages project site URL
-baseurl: "/agent_chronicles"
+baseurl: "/agent-chronicles"
 url: "https://rodionsteshenko.github.io"
 
 # Build settings
