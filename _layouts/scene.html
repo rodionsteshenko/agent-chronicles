@@ -64,12 +64,6 @@ layout: default
   {% endif %}
 
   <nav class="scene-navigation">
-    {% if page.previous in site.posts %}
-      <a class="prev-scene" href="{{ page.previous.url | relative_url }}">&larr; Previous</a>
-    {% elsif page.previous %}
-      <a class="prev-scene" href="{{ page.previous | relative_url }}">&larr; Previous</a>
-    {% endif %}
-    
     {% assign sorted_posts = site.posts | sort: 'date' %}
     {% for post in sorted_posts %}
       {% if post.url == page.url %}
