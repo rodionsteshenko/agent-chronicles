@@ -4,10 +4,10 @@
 meta:
   genre: fantasy
   tone: epic with moments of dark humor
-  started: null
-  last_updated: null
-  total_scenes: 0
-  status: not_started  # not_started, in_progress, concluded
+  started: 2026-01-31
+  last_updated: 2026-01-31
+  total_scenes: 1
+  status: in_progress  # not_started, in_progress, concluded
 
 world:
   name: "The Shattered Accord"
@@ -75,22 +75,41 @@ plot:
     priests are calling it prophecy fulfilled. And Kael, who wants nothing to do 
     with any of it, is about to be pulled in when an echo-storm reveals something 
     that shouldn't exist - a message from his dead sister.
-  active_threads: []
+  active_threads:
+    - id: mira_message
+      description: "Kael received a message from his dead sister Mira"
+      introduced: 1
+      status: active
+    - id: something_followed
+      description: "Mira warned that 'something followed her' back"
+      introduced: 1
+      status: active
   resolved_threads: []
-  events: []
+  events:
+    - scene: 1
+      summary: "Kael receives an impossible message from his dissolved sister Mira during an echo-storm"
+      significance: major
 
 narrative:
-  previous_scene_summary: null
-  current_tension_level: 0
+  previous_scene_summary: |
+    Kael Thornwood, a Tuner working as a courier to avoid using his powers, was caught 
+    in an echo-storm while crossing the Rustfields. Against his instincts, he opened 
+    his senses to an unusually structured echo and received an impossible message 
+    from his sister Mira, who dissolved three years ago. She claims she "found the 
+    way back" but warns that "something followed her."
+  current_tension_level: 6
   pending_revelations:
     - "The God-Engines are responding to something specific"
-    - "Mira didn't dissolve - she went somewhere"
+    - "Mira didn't dissolve - she went somewhere else"
     - "Kael's power is different from other Tuners"
-  foreshadowing: []
+    - "What followed Mira back?"
+  foreshadowing:
+    - "The echo was structured, like a message - implies someone can shape echoes deliberately"
+    - "Mira's dissolution happened while she was 'reaching for something only she could see'"
 
 next_scene:
-  suggested_focus: "Introduce Kael during a routine courier run that goes wrong"
+  suggested_focus: "Kael returns to Caderyn's Rest, shaken. Must decide whether to investigate or ignore what he heard."
   characters_involved:
     - Kael Thornwood
-  location: "The Rustfields, near Caderyn's Rest"
-  tone: "Tense, establishing character through action"
+  location: "Caderyn's Rest"
+  tone: "Reflective, introduces supporting characters, builds mystery"
