@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-01-31
-  total_scenes: 1
+  total_scenes: 2
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -28,10 +28,10 @@ world:
       first_appeared: null
     - name: "The Rustfields"
       description: "Plains littered with ancient machine debris, dangerous echo-storms roll through weekly."
-      first_appeared: null
+      first_appeared: 1
     - name: "Caderyn's Rest"
-      description: "A remote village at the edge of the Rustfields, known for producing Tuners."
-      first_appeared: null
+      description: "A remote village at the edge of the Rustfields, known for producing Tuners. Features a massive gear as its gate."
+      first_appeared: 2
 
 magic_system:
   name: "Echo-Tuning"
@@ -65,6 +65,22 @@ characters:
       description: "Kael's older sister, a brilliant Tuner who pushed too far. Her dissolution haunts him."
       first_appeared: 1
       status: dead
+    - name: "Aunt Vera"
+      role: "guardian"
+      description: |
+        Kael's aunt who raised him and Mira after their parents died in an echo-storm. 
+        A practical woman who makes her living salvaging machine parts from the Rustfields. 
+        Fiercely protective of Kael, having already lost Mira. No Tuning ability herself.
+      first_appeared: 2
+      status: alive
+    - name: "Tam"
+      role: "childhood friend"
+      description: |
+        Sharp-tongued and observant, Tam is one of the few people in Caderyn's Rest who 
+        treats Kael normally. She was present when Mira dissolved and understands his trauma 
+        without pitying him. Uses sarcasm as a shield, but genuinely cares.
+      first_appeared: 2
+      status: alive
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
@@ -89,27 +105,34 @@ plot:
     - scene: 1
       summary: "Kael receives an impossible message from his dissolved sister Mira during an echo-storm"
       significance: major
+    - scene: 2
+      summary: "Kael returns to Caderyn's Rest and tells Aunt Vera about Mira's message; refuses to go to the Guild"
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    Kael Thornwood, a Tuner working as a courier to avoid using his powers, was caught 
-    in an echo-storm while crossing the Rustfields. Against his instincts, he opened 
-    his senses to an unusually structured echo and received an impossible message 
-    from his sister Mira, who dissolved three years ago. She claims she "found the 
-    way back" but warns that "something followed her."
-  current_tension_level: 6
+    Kael returned to Caderyn's Rest shaken by Mira's message. He deflected questions from 
+    his friend Tam and confided in Aunt Vera about hearing Mira in the echo-storm. Vera 
+    urged him to tell the Tuner's Guild, but Kael refused, fearing they would study and 
+    use him. He retreated to his room, haunted by his sister's warning that "something 
+    followed her" and unsure what to do next.
+  current_tension_level: 7
   pending_revelations:
     - "The God-Engines are responding to something specific"
     - "Mira didn't dissolve - she went somewhere else"
     - "Kael's power is different from other Tuners"
     - "What followed Mira back?"
+    - "Why did the echo seem addressed specifically to Kael?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
+    - "Kael suspects he can do things other Tuners can't"
+    - "Vera's reaction suggests she may know more than she's saying"
 
 next_scene:
-  suggested_focus: "Kael returns to Caderyn's Rest, shaken. Must decide whether to investigate or ignore what he heard."
+  suggested_focus: "Something arrives in Caderyn's Rest - the 'something' that followed Mira? Or a Guild representative drawn by the unusual echo activity?"
   characters_involved:
     - Kael Thornwood
+    - Tam
   location: "Caderyn's Rest"
-  tone: "Reflective, introduces supporting characters, builds mystery"
+  tone: "Tension escalates, inciting incident forces Kael to act"
