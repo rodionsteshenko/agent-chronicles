@@ -3,63 +3,94 @@
 
 meta:
   genre: fantasy
-  tone: epic
+  tone: epic with moments of dark humor
   started: null
   last_updated: null
   total_scenes: 0
   status: not_started  # not_started, in_progress, concluded
 
 world:
-  name: null
-  era: null
-  description: null
-  locations: []
-  # locations:
-  #   - name: The Ashen Keep
-  #     description: A crumbling fortress...
-  #     first_appeared: 1
+  name: "The Shattered Accord"
+  era: "The Third Silence - 847 years after the God-Engines fell"
+  description: |
+    A world where magic once flowed through massive mechanical constructs called God-Engines, 
+    built by a civilization now lost. When they fell silent, magic fractured - now it exists 
+    only in "echoes," unstable pockets that drift across the land like storms. Those who 
+    can read the echoes and harvest their power are called Tuners. Most die young.
+    
+    The great cities built around dormant God-Engines have become religious sites, 
+    their priests claiming the machines will wake again. The wilds between cities 
+    are dangerous, riddled with echo-storms and the Changed - creatures and people 
+    warped by unstable magic.
+  locations:
+    - name: "Vanthem"
+      description: "A city built into the ribcage of a fallen God-Engine. The engine's heart still glows faintly."
+      first_appeared: null
+    - name: "The Rustfields"
+      description: "Plains littered with ancient machine debris, dangerous echo-storms roll through weekly."
+      first_appeared: null
+    - name: "Caderyn's Rest"
+      description: "A remote village at the edge of the Rustfields, known for producing Tuners."
+      first_appeared: null
+
+magic_system:
+  name: "Echo-Tuning"
+  description: |
+    Magic exists in unstable pockets called "echoes" - remnants of the God-Engines' power.
+    Tuners can sense echoes, attune to them, and channel their energy. But echoes are 
+    unpredictable. Use too much, too fast, and the Tuner risks "dissolution" - their 
+    body and mind fragmenting like the magic itself. Most Tuners burn out by 30.
+  costs: "Physical deterioration, memory fragmentation, eventual dissolution"
+  limits: "Must be near an echo source, power is unstable and hard to control"
 
 characters:
-  # Each character has:
-  # - name
-  # - role (protagonist, antagonist, ally, etc.)
-  # - description
-  # - first_appeared (scene number)
-  # - status (alive, dead, unknown)
-  # - arc_notes (list of developments)
-  protagonists: []
+  protagonists:
+    - name: "Kael Thornwood"
+      role: protagonist
+      description: |
+        A 23-year-old Tuner from Caderyn's Rest, one of the strongest in a generation - 
+        and terrified of his own power. His older sister Mira dissolved three years ago 
+        after pushing too hard during an echo-storm. Kael has been running from his 
+        abilities ever since, working as a courier rather than joining the Tuner guilds.
+        
+        Cynical, guarded, but deeply loyal to the few people he lets close. Uses humor 
+        to deflect. Haunted by the moment he watched his sister fade.
+      first_appeared: 1
+      status: alive
+      arc_notes: []
   antagonists: []
-  supporting: []
+  supporting:
+    - name: "Mira Thornwood"
+      role: "deceased sister (appears in memories/flashbacks)"
+      description: "Kael's older sister, a brilliant Tuner who pushed too far. Her dissolution haunts him."
+      first_appeared: 1
+      status: dead
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
   current_chapter: 0
-  arc_summary: null
+  arc_summary: |
+    Something is waking the God-Engines. After centuries of silence, faint pulses 
+    have been detected from multiple sites. The Tuner guilds are mobilizing. The 
+    priests are calling it prophecy fulfilled. And Kael, who wants nothing to do 
+    with any of it, is about to be pulled in when an echo-storm reveals something 
+    that shouldn't exist - a message from his dead sister.
   active_threads: []
-  # active_threads:
-  #   - id: thread_1
-  #     description: "The search for the lost artifact"
-  #     introduced: 1
-  #     status: active
   resolved_threads: []
-  
-  # Key events that shape the story
   events: []
-  # events:
-  #   - scene: 1
-  #     summary: "Hero discovers their power"
-  #     significance: major
 
 narrative:
-  # Helps maintain consistency
   previous_scene_summary: null
-  current_tension_level: 0  # 1-10
-  pending_revelations: []
+  current_tension_level: 0
+  pending_revelations:
+    - "The God-Engines are responding to something specific"
+    - "Mira didn't dissolve - she went somewhere"
+    - "Kael's power is different from other Tuners"
   foreshadowing: []
 
-# Scene generation hints
 next_scene:
-  suggested_focus: null
-  characters_involved: []
-  location: null
-  tone: null
+  suggested_focus: "Introduce Kael during a routine courier run that goes wrong"
+  characters_involved:
+    - Kael Thornwood
+  location: "The Rustfields, near Caderyn's Rest"
+  tone: "Tense, establishing character through action"
