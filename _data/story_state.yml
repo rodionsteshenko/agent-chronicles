@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-01-31
-  total_scenes: 3
+  total_scenes: 4
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -58,11 +58,17 @@ characters:
         
         In Scene 3, Kael discovered he can do something impossible: pull his echo inward, 
         making it impossible for a Hollow to feed on him. This ability is unprecedented.
+        
+        In Scene 4, Kael learned his parents were researchers who studied the God-Engines 
+        and found something that scared them into hiding. He now carries a mysterious 
+        metal disk his mother left behind.
       first_appeared: 1
       status: alive
       arc_notes:
         - "Demonstrated unprecedented ability to 'fold' his echo inward"
         - "Committed to finding answers about his nature"
+        - "Received mysterious metal disk from his mother (via Vera)"
+        - "Departed for Vanthem with Tam"
   antagonists:
     - name: "The Hollow"
       role: "recurring threat"
@@ -72,7 +78,7 @@ characters:
         Tuners to feed on their echo essence. Supposedly extinct, but this one followed Mira's 
         message back to the physical world. Driven off by Kael but not destroyed.
       first_appeared: 3
-      status: alive (retreated)
+      status: alive (retreated, nursing wounds)
   supporting:
     - name: "Mira Thornwood"
       role: "deceased sister (appears in messages/memories)"
@@ -82,25 +88,31 @@ characters:
     - name: "Aunt Vera"
       role: "guardian"
       description: |
-        Kael's aunt who raised him and Mira after their parents died in an echo-storm. 
+        Kael's aunt who raised him and Mira after their parents died. 
         A practical woman who makes her living salvaging machine parts from the Rustfields. 
         Fiercely protective of Kael, having already lost Mira. No Tuning ability herself.
-        May know more than she's revealing.
+        
+        Revealed in Scene 4: She knows more than she let on. Kael's parents were researchers 
+        who studied the God-Engines, found something frightening, and fled to raise their 
+        children in obscurity. She gave Kael a mysterious metal disk his mother left behind.
       first_appeared: 2
-      status: alive
+      status: alive (remained in Caderyn's Rest)
     - name: "Tam"
-      role: "childhood friend"
+      role: "traveling companion"
       description: |
         Sharp-tongued and observant, Tam is one of the few people in Caderyn's Rest who 
         treats Kael normally. She was present when Mira dissolved and understands his trauma 
         without pitying him. Uses sarcasm as a shield, but genuinely cares. Showed bravery 
         during the Hollow attack, refusing to leave Kael's side.
+        
+        In Scene 4, she insisted on accompanying Kael to Vanthem, refusing to let him face 
+        the journey alone. She'd already spoken with Vera and helped prepare supplies.
       first_appeared: 2
-      status: alive
+      status: alive (traveling with Kael)
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 0
+  current_chapter: 4
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -108,8 +120,10 @@ plot:
     with any of it, is about to be pulled in when an echo-storm reveals something 
     that shouldn't exist - a message from his dead sister.
     
-    The Hollow that followed Mira's message has made the threat real. Kael can no 
-    longer hide - he needs answers about what he is and what Mira found.
+    The Hollow that followed Mira's message made the threat real. With the Guild 
+    coming to investigate and possibly "collect" him, Kael had no choice but to 
+    flee. With Tam at his side and a mysterious artifact from his parents, he's 
+    heading to Vanthem to seek answers about what he is and what Mira found.
   active_threads:
     - id: mira_message
       description: "Kael received a message from his dead sister Mira"
@@ -123,11 +137,28 @@ plot:
       description: "Kael can fold his echo inward, an ability no other Tuner has demonstrated"
       introduced: 3
       status: active
+    - id: guild_pursuit
+      description: "Old Man Garrett has gone to alert the Guild - they will be pursuing Kael"
+      introduced: 4
+      status: active
+    - id: parents_research
+      description: "Kael's parents were God-Engine researchers who found something terrifying"
+      introduced: 4
+      status: active
+    - id: mothers_disk
+      description: "A mysterious warm metal disk inscribed with unknown symbols, left by Kael's mother"
+      introduced: 4
+      status: active
+    - id: journey_to_vanthem
+      description: "Kael and Tam are traveling through the Rustfields to reach Vanthem"
+      introduced: 4
+      status: active
+  resolved_threads:
     - id: village_knows
       description: "The villagers saw what Kael can do - word will spread"
       introduced: 3
-      status: active
-  resolved_threads: []
+      resolved: 4
+      resolution: "Word has spread; Old Man Garrett departed to inform the Guild"
   events:
     - scene: 1
       summary: "Kael receives an impossible message from his dissolved sister Mira during an echo-storm"
@@ -138,36 +169,46 @@ plot:
     - scene: 3
       summary: "A Hollow attacks the village, hunting Kael. He discovers he can fold his echo inward to repel it. The creature retreats but isn't destroyed."
       significance: major
+    - scene: 4
+      summary: "With the Guild coming, Kael must flee. Vera reveals his parents were researchers who found something terrifying, and gives him a mysterious metal disk. Tam insists on accompanying him. They depart for Vanthem at dawn."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    Kael woke to screaming - a Hollow had appeared in the village square. The creature, 
-    supposedly extinct, had followed Mira's message through the echo. It tried to feed 
-    on Kael's essence, but he discovered an impossible ability: he could fold his echo 
-    inward, denying the Hollow its meal. The creature screamed silently and retreated. 
-    Kael nearly lost himself in the process, almost dissolving like Mira. Tam kept him 
-    anchored. The villagers saw everything. Aunt Vera asked what he is. Kael realized 
-    he can no longer hide - he needs to find answers.
-  current_tension_level: 8
+    Unable to sleep after the Hollow attack, Kael was visited by Tam, who informed him 
+    that Old Man Garrett had already left to alert the Guild. With only 3-4 days before 
+    Guild agents arrive, Kael had to flee. He decided to head to Vanthem to find answers 
+    about Mira and his own abilities.
+    
+    Tam refused to let him go alone, having already arranged supplies with Vera. Before 
+    he left, Vera revealed a shocking truth: his parents weren't simple villagers who 
+    died in an echo-storm. They were researchers who studied the God-Engines, found 
+    something that terrified them, and went into hiding. She gave him a mysterious metal 
+    disk his mother had left behind, warm to the touch and inscribed with unknown symbols.
+    
+    Kael and Tam departed through the village gate at dawn, heading into the Rustfields 
+    toward Vanthem.
+  current_tension_level: 7
   pending_revelations:
     - "The God-Engines are responding to something specific"
     - "Mira didn't dissolve - she went somewhere else"
     - "Why can Kael do things other Tuners can't?"
     - "What is the Hollow, and where did it go?"
-    - "Will the Guild come for Kael now that his power is known?"
-    - "What did Vera mean by 'they're not supposed to exist anymore'?"
+    - "What did Kael's parents discover about the God-Engines?"
+    - "What is the mysterious metal disk and what does it do?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
     - "Kael can do things other Tuners cannot - confirmed"
-    - "Vera's reaction suggests she may know more than she's saying"
+    - "Vera's reaction suggests she may know more than she's saying - revealed in Scene 4"
     - "Hollows being 'extinct' implies someone or something eliminated them before"
+    - "Kael's parents were God-Engine researchers who found something terrifying"
+    - "The metal disk is warm - it may be reacting to Kael's echo"
 
 next_scene:
-  suggested_focus: "Aftermath of the attack. Word spreads fast - Guild representatives may be on their way. Kael must decide: wait to be collected, or seek answers on his own terms. Tam may insist on coming."
+  suggested_focus: "The journey through the Rustfields. First night camping, establishing the dynamic between Kael and Tam. Possibly an encounter with an echo-storm or Changed beasts. The Hollow may be tracking them from a distance."
   characters_involved:
     - Kael Thornwood
     - Tam
-    - Aunt Vera
-  location: "Caderyn's Rest, possibly departure"
-  tone: "Transition scene - decision point for Kael's journey"
+  location: "The Rustfields"
+  tone: "Journey/adventure with underlying tension - they're being pursued from multiple directions"
