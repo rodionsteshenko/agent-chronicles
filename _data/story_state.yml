@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-02-01
-  total_scenes: 6
+  total_scenes: 7
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -35,6 +35,9 @@ world:
     - name: "Rustfield Waystation"
       description: "An old observation tower, half-collapsed, with a sheltered basement used by salvagers for generations. Fire ring, tallied walls, stacked wood for travelers."
       first_appeared: 5
+    - name: "Changed Territory"
+      description: "A section of the Rustfields where wild magic has permanently warped the landscape. Metal hums with resonance, trees grow with copper veins, pools reflect wrong skies. Home to the Changed - Tuners who were transformed 847 years ago when they tried to wake the God-Engines."
+      first_appeared: 7
 
 magic_system:
   name: "Echo-Tuning"
@@ -69,6 +72,10 @@ characters:
         In Scene 6, Kael discovered the disk can channel wild magic even in dead zones. 
         An ancient voice spoke through him to banish the Hollow. The disk's symbols 
         changed afterward, forming a pattern: a circle broken into three segments.
+        
+        In Scene 7, Kael learned from the Changed that he is a "vessel" the God-Engine 
+        is trying to fill - not a Tuner reaching for power, but power reaching for him. 
+        He also learned that Mira may not be truly gone: "She fell into the echo."
       first_appeared: 1
       status: alive
       arc_notes:
@@ -81,6 +88,9 @@ characters:
         - "Channeled wild storm magic through the disk to banish the Hollow"
         - "An ancient voice spoke through him - 'BEGONE'"
         - "The disk's symbols reformed into a broken circle pattern"
+        - "Learned he is a 'vessel' the God-Engine is trying to fill"
+        - "Learned Mira may exist somewhere in the echoes - did not dissolve but 'fell in'"
+        - "Learned the disk is one of THREE fragments from the 'First Engine'"
   antagonists:
     - name: "The Hollow"
       role: "recurring threat"
@@ -96,12 +106,26 @@ characters:
         pushed out temporarily.
       first_appeared: 3
       status: banished (will return)
+    - name: "The Hollow's Creator"
+      role: "unseen antagonist"
+      description: |
+        Something or someone who made the Hollow. According to the Changed, this entity 
+        has been hunting for the three fragments since the silence began - 847 years ago. 
+        It sent the Hollow to hunt Tuners who might carry the keys. When Kael used the 
+        disk to banish the Hollow, he "sent a signal through every echo in the world." 
+        The creator will have heard it.
+      first_appeared: 7 (mentioned)
+      status: active (hunting)
   supporting:
     - name: "Mira Thornwood"
       role: "deceased sister (appears in messages/memories)"
-      description: "Kael's older sister, a brilliant Tuner who pushed too far. Her dissolution haunts him. Somehow sent a message from beyond."
+      description: |
+        Kael's older sister, a brilliant Tuner who pushed too far. Her dissolution haunts him. 
+        Somehow sent a message from beyond. According to the Changed, she did not dissolve 
+        into nothing - she "fell into the echo." Echoes are not empty. This suggests Mira 
+        may still exist somewhere within the echo-space.
       first_appeared: 1
-      status: dissolved (but conscious somewhere?)
+      status: dissolved (but exists in the echoes - can potentially be found)
     - name: "Aunt Vera"
       role: "guardian"
       description: |
@@ -126,10 +150,24 @@ characters:
         done being afraid. Refuses to leave Kael despite the danger.
       first_appeared: 2
       status: alive (traveling with Kael)
+    - name: "Seren (Changed)"
+      role: "informant"
+      description: |
+        One of the Changed - Tuners who were transformed 847 years ago when they tried 
+        to wake the God-Engines after the silence. Half-covered in violet-blue crystal 
+        growths, twisted limbs, but retains consciousness and speech. Speaks in layered 
+        harmonics as if multiple voices speak the same words. 
+        
+        Delivered crucial information to Kael: the disk is one of three fragments from 
+        the "First Engine," Kael is a "vessel" the God-Engine is trying to fill, Mira 
+        fell into the echoes rather than dissolving, and something ancient made the 
+        Hollow to hunt for the fragments.
+      first_appeared: 7
+      status: alive (in Changed territory)
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 6
+  current_chapter: 7
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -137,14 +175,20 @@ plot:
     with any of it, is about to be pulled in when an echo-storm reveals something 
     that shouldn't exist - a message from his dead sister.
     
-    Now on the run from the Guild with Tam at his side, Kael has survived a Hollow 
-    attack by channeling an echo-storm through his mother's disk. An ancient voice 
-    spoke through him, claiming he carries "a piece" of something vast and old. 
-    The God-Engines, it seems, are not as dead as everyone believes.
+    Now on the run from the Guild with Tam at his side, Kael has learned the truth 
+    from the Changed: his disk is one of three fragments from the First Engine, and 
+    he is not a Tuner reaching for power - he is a vessel that power is reaching for. 
+    His sister Mira did not dissolve but fell into the echoes, and may still exist. 
+    But an ancient enemy has been hunting the fragments for 847 years, and Kael's 
+    use of the disk has revealed his location to every echo in the world.
   active_threads:
     - id: mira_message
       description: "Kael received a message from his dead sister Mira"
       introduced: 1
+      status: active
+    - id: mira_in_echoes
+      description: "Mira did not dissolve - she fell into the echoes and may still exist there"
+      introduced: 7
       status: active
     - id: hollow_threat
       description: "The Hollow was banished but not destroyed - it will return"
@@ -155,16 +199,16 @@ plot:
       introduced: 3
       status: active
     - id: guild_pursuit
-      description: "Old Man Garrett has gone to alert the Guild - they will be pursuing Kael"
+      description: "The Guild is actively tracking Kael - smoke visible on the horizon"
       introduced: 4
       status: active
     - id: parents_research
       description: "Kael's parents were God-Engine researchers who found something terrifying"
       introduced: 4
       status: active
-    - id: mothers_disk
-      description: "The disk can channel wild magic and an ancient voice - its symbols have changed to a broken circle"
-      introduced: 4
+    - id: three_fragments
+      description: "The disk is one of THREE fragments from the First Engine - 'the circle that holds'"
+      introduced: 7
       status: active
     - id: journey_to_vanthem
       description: "Kael and Tam are traveling through the Rustfields to reach Vanthem"
@@ -177,6 +221,14 @@ plot:
     - id: god_engines_waking
       description: "The God-Engines may not be as dead as everyone believes"
       introduced: 6
+      status: active
+    - id: vessel_nature
+      description: "Kael is a 'vessel' the God-Engine is trying to fill - not reaching for power, but being reached for"
+      introduced: 7
+      status: active
+    - id: hollow_creator
+      description: "Something ancient made the Hollow and has been hunting the three fragments for 847 years"
+      introduced: 7
       status: active
   resolved_threads:
     - id: village_knows
@@ -203,33 +255,34 @@ plot:
     - scene: 6
       summary: "The Hollow attacks during an unexpected echo-storm. Kael channels wild magic through the disk, and an ancient voice speaks through him to banish the creature. The disk's symbols reform into a broken circle. Tam reveals her mother drowned saving her and refuses to leave Kael's side."
       significance: major
+    - scene: 7
+      summary: "Kael and Tam cross Changed territory and encounter Seren, a conscious Changed who was transformed 847 years ago. They learn the disk is one of three fragments, Kael is a 'vessel' being filled by the God-Engine, Mira fell into the echoes rather than dissolving, and an ancient enemy has been hunting the fragments. The Guild is visibly pursuing them."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    The Hollow caught up to Kael and Tam at the waystation, attacking during a sudden 
-    echo-storm. In the dead zone of the Rustfields, Kael had no echo to tune - but the 
-    disk pulled in the storm's wild magic and channeled it through him.
+    Crossing through Changed territory, Kael and Tam encountered the Changed - Tuners who 
+    were transformed 847 years ago when they tried to wake the God-Engines after the silence. 
+    One of them, Seren, retained consciousness and delivered crucial revelations:
     
-    An ancient voice, the same one from his dreams, spoke through Kael: "BEGONE." The 
-    Hollow was banished, collapsing through impossible angles with a sound like shattering 
-    crystal. Kael believes it will return.
+    - The disk is "the circle that holds" - one of THREE fragments from the First Engine
+    - Kael is not a Tuner reaching for power; he is a "vessel" the God-Engine is trying to fill
+    - Mira did not dissolve into nothing - she "fell into the echo" and may still exist
+    - Something ancient MADE the Hollow and has been hunting the fragments for 847 years
+    - When Kael used the disk to banish the Hollow, he sent a signal through every echo in the world
     
-    After the battle, Tam revealed her mother drowned when she was eight, pushing her to 
-    safety. She decided after watching Mira dissolve that she was done being afraid. She 
-    refuses to leave Kael despite the danger.
-    
-    The disk's symbols have changed, forming a new pattern: a circle broken into three 
-    segments. Kael suspects the disk is a literal piece of a God-Engine - and that the 
-    God-Engines are not as dead as everyone believes.
-  current_tension_level: 8
+    As the Changed vanished into the warped landscape, Kael and Tam spotted smoke on the 
+    southern horizon - the Guild is burning the path behind them, actively tracking. They 
+    fled deeper into Changed territory.
+  current_tension_level: 9
   pending_revelations:
-    - "The God-Engines are responding to something specific"
-    - "Mira didn't dissolve - she went somewhere else"
-    - "Why can Kael do things other Tuners can't?"
+    - "What are the other two fragments and where are they?"
+    - "Who or what created the Hollow and hunts the fragments?"
+    - "Can Mira be found or reached within the echoes?"
+    - "Why is Kael specifically suited to be a 'vessel'?"
     - "What did Kael's parents discover about the God-Engines?"
-    - "What is the ancient presence that speaks through the disk?"
-    - "What does the broken circle symbol mean?"
-    - "Why did the Hollow follow Mira's message specifically?"
+    - "What happens when the three fragments are reunited?"
+    - "Who is 'the Architect' who shattered the First Engine?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
@@ -239,13 +292,17 @@ narrative:
     - "The disk responds only to Kael - he may be connected to something larger"
     - "An ancient presence answered Kael's unconscious reach - the God-Engines may not be as dead as believed"
     - "The voice said 'you carry a piece of me' - the disk is literally part of a God-Engine"
-    - "The broken circle pattern on the disk - significance unknown"
-    - "Salvager's map shows 'Changed territory' and 'Guild outpost' ahead"
+    - "The broken circle pattern on the disk - one of three fragments"
+    - "The Changed persist for 847 years - time moves differently for those in the echo"
+    - "Mira 'fell into the echo' - foreshadows potential reunion"
+    - "Something ancient hunts the fragments - has been hunting since the silence began"
+    - "Kael's signal went through 'every echo in the world' - consequences coming"
 
 next_scene:
-  suggested_focus: "The journey continues through the Rustfields. Consider: encountering Changed creatures, meeting other travelers (possible ally or threat?), or reaching a danger point marked on the salvager's map. Could also explore Kael and Tam's deepening bond and his processing of what the ancient voice said. The Guild pursuit is closing in."
+  suggested_focus: "The Guild pursuit intensifies. Consider: a direct confrontation with Guild pursuers, reaching the edge of Changed territory, or a moment where Kael must choose between safety and using the disk again (risking another signal). Could also have the Hollow's creator make their first appearance or send another agent. The revelation about Mira should affect Kael's emotional state and possibly his decisions."
   characters_involved:
     - Kael Thornwood
     - Tam
-  location: "The Rustfields (continuing journey toward Vanthem)"
-  tone: "Brief respite with growing dread - the threats multiply but so does understanding"
+    - Guild pursuers (new)
+  location: "Edge of Changed Territory / approaching Guild outpost"
+  tone: "Desperate flight, hard choices - the noose is tightening"
