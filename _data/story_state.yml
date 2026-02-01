@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-02-01
-  total_scenes: 5
+  total_scenes: 6
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -66,9 +66,9 @@ characters:
         and found something that scared them into hiding. He now carries a mysterious 
         metal disk his mother left behind.
         
-        In Scene 5, Kael discovered the disk responds only to him - warm to his touch but 
-        cold to Tam. During his night watch, he sensed something vast and ancient pulse back 
-        through the disk.
+        In Scene 6, Kael discovered the disk can channel wild magic even in dead zones. 
+        An ancient voice spoke through him to banish the Hollow. The disk's symbols 
+        changed afterward, forming a pattern: a circle broken into three segments.
       first_appeared: 1
       status: alive
       arc_notes:
@@ -78,6 +78,9 @@ characters:
         - "Departed for Vanthem with Tam"
         - "Disk responds only to him - may be keyed to his unique nature"
         - "Felt a distant, ancient presence respond through the disk"
+        - "Channeled wild storm magic through the disk to banish the Hollow"
+        - "An ancient voice spoke through him - 'BEGONE'"
+        - "The disk's symbols reformed into a broken circle pattern"
   antagonists:
     - name: "The Hollow"
       role: "recurring threat"
@@ -85,11 +88,14 @@ characters:
         A creature that crossed through an echo and came back wrong. Translucent like clouded 
         glass, with a featureless smooth face. Moves in stuttering, skip-frame motion. Hunts 
         Tuners to feed on their echo essence. Supposedly extinct, but this one followed Mira's 
-        message back to the physical world. Driven off by Kael but not destroyed.
+        message back to the physical world.
         
-        In Scene 5, Kael spotted a distant flicker along their path - possibly the Hollow tracking them.
+        In Scene 6, the Hollow attacked the waystation during an echo-storm but was banished 
+        by Kael channeling power through the disk. It collapsed through impossible angles and 
+        vanished with a sound like shattering crystal. Kael believes it is not destroyed, only 
+        pushed out temporarily.
       first_appeared: 3
-      status: alive (tracking Kael through the Rustfields)
+      status: banished (will return)
   supporting:
     - name: "Mira Thornwood"
       role: "deceased sister (appears in messages/memories)"
@@ -113,17 +119,17 @@ characters:
       description: |
         Sharp-tongued and observant, Tam is one of the few people in Caderyn's Rest who 
         treats Kael normally. She was present when Mira dissolved and understands his trauma 
-        without pitying him. Uses sarcasm as a shield, but genuinely cares. Showed bravery 
-        during the Hollow attack, refusing to leave Kael's side.
+        without pitying him. Uses sarcasm as a shield, but genuinely cares.
         
-        Insisted on accompanying Kael to Vanthem. The disk is cold to her touch, confirming 
-        it responds specifically to Kael.
+        In Scene 6, Tam revealed that her mother drowned when she was eight, pushing her to 
+        shore before the current took her. She decided after Mira's dissolution that she was 
+        done being afraid. Refuses to leave Kael despite the danger.
       first_appeared: 2
       status: alive (traveling with Kael)
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 5
+  current_chapter: 6
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -131,22 +137,21 @@ plot:
     with any of it, is about to be pulled in when an echo-storm reveals something 
     that shouldn't exist - a message from his dead sister.
     
-    Now on the run from the Guild with Tam at his side, Kael is crossing the 
-    dangerous Rustfields toward Vanthem. The mysterious disk his mother left him 
-    grows warmer by the day, and something ancient stirred when he reached for it. 
-    Behind them, the Hollow tracks. Ahead, answers wait in a city built from the 
-    bones of a dead god.
+    Now on the run from the Guild with Tam at his side, Kael has survived a Hollow 
+    attack by channeling an echo-storm through his mother's disk. An ancient voice 
+    spoke through him, claiming he carries "a piece" of something vast and old. 
+    The God-Engines, it seems, are not as dead as everyone believes.
   active_threads:
     - id: mira_message
       description: "Kael received a message from his dead sister Mira"
       introduced: 1
       status: active
-    - id: something_followed
-      description: "A Hollow followed Mira's message back - driven off but not destroyed, now tracking them"
-      introduced: 1
+    - id: hollow_threat
+      description: "The Hollow was banished but not destroyed - it will return"
+      introduced: 3
       status: active
     - id: kaels_unique_power
-      description: "Kael can fold his echo inward, an ability no other Tuner has demonstrated"
+      description: "Kael can fold his echo inward and channel wild magic through the disk"
       introduced: 3
       status: active
     - id: guild_pursuit
@@ -158,7 +163,7 @@ plot:
       introduced: 4
       status: active
     - id: mothers_disk
-      description: "A mysterious warm metal disk that responds only to Kael - something ancient pulsed back through it"
+      description: "The disk can channel wild magic and an ancient voice - its symbols have changed to a broken circle"
       introduced: 4
       status: active
     - id: journey_to_vanthem
@@ -166,8 +171,12 @@ plot:
       introduced: 4
       status: active
     - id: ancient_presence
-      description: "Something vast and old responded to Kael through the disk"
+      description: "An ancient being claims Kael carries 'a piece of me' - spoke through him to banish the Hollow"
       introduced: 5
+      status: active
+    - id: god_engines_waking
+      description: "The God-Engines may not be as dead as everyone believes"
+      introduced: 6
       status: active
   resolved_threads:
     - id: village_knows
@@ -191,29 +200,36 @@ plot:
     - scene: 5
       summary: "Kael and Tam trek through the Rustfields and shelter at a waystation. The disk responds only to Kael - warm to him, cold to Tam. During his night watch, Kael senses something vast and ancient pulse back through the disk. A flicker in the distance suggests the Hollow is following."
       significance: moderate
+    - scene: 6
+      summary: "The Hollow attacks during an unexpected echo-storm. Kael channels wild magic through the disk, and an ancient voice speaks through him to banish the creature. The disk's symbols reform into a broken circle. Tam reveals her mother drowned saving her and refuses to leave Kael's side."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    Kael and Tam spent their first day crossing the Rustfields, navigating through massive 
-    rusted debris of the fallen God-Engines. They sheltered at an old waystation - a 
-    half-collapsed observation tower used by salvagers for generations.
+    The Hollow caught up to Kael and Tam at the waystation, attacking during a sudden 
+    echo-storm. In the dead zone of the Rustfields, Kael had no echo to tune - but the 
+    disk pulled in the storm's wild magic and channeled it through him.
     
-    A troubling discovery: the metal disk his mother left is warm to Kael's touch but cold 
-    to Tam's, confirming it responds specifically to him. During his night watch, the disk 
-    pulsed like a heartbeat, and Kael felt something vast and ancient pulse back from a 
-    great distance.
+    An ancient voice, the same one from his dreams, spoke through Kael: "BEGONE." The 
+    Hollow was banished, collapsing through impossible angles with a sound like shattering 
+    crystal. Kael believes it will return.
     
-    Kael also spotted a flicker along their back trail as the sun set - possibly the Hollow, 
-    still tracking them through the wastelands.
-  current_tension_level: 7
+    After the battle, Tam revealed her mother drowned when she was eight, pushing her to 
+    safety. She decided after watching Mira dissolve that she was done being afraid. She 
+    refuses to leave Kael despite the danger.
+    
+    The disk's symbols have changed, forming a new pattern: a circle broken into three 
+    segments. Kael suspects the disk is a literal piece of a God-Engine - and that the 
+    God-Engines are not as dead as everyone believes.
+  current_tension_level: 8
   pending_revelations:
     - "The God-Engines are responding to something specific"
     - "Mira didn't dissolve - she went somewhere else"
     - "Why can Kael do things other Tuners can't?"
-    - "What is the Hollow, and where did it go?"
     - "What did Kael's parents discover about the God-Engines?"
-    - "What is the mysterious metal disk and what does it do?"
-    - "What is the ancient presence that responded through the disk?"
+    - "What is the ancient presence that speaks through the disk?"
+    - "What does the broken circle symbol mean?"
+    - "Why did the Hollow follow Mira's message specifically?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
@@ -222,12 +238,14 @@ narrative:
     - "Kael's parents were God-Engine researchers who found something terrifying"
     - "The disk responds only to Kael - he may be connected to something larger"
     - "An ancient presence answered Kael's unconscious reach - the God-Engines may not be as dead as believed"
-    - "The wind in the Rustfields carries whispers - 'Coming'"
+    - "The voice said 'you carry a piece of me' - the disk is literally part of a God-Engine"
+    - "The broken circle pattern on the disk - significance unknown"
+    - "Salvager's map shows 'Changed territory' and 'Guild outpost' ahead"
 
 next_scene:
-  suggested_focus: "An encounter that forces action - either an echo-storm rolling through (testing Kael's abilities in a dead zone), Changed beasts attacking the waystation, or the Hollow catching up. The ancient presence could offer cryptic guidance. Consider introducing a new character - a fellow traveler or another Tuner on the run."
+  suggested_focus: "The journey continues through the Rustfields. Consider: encountering Changed creatures, meeting other travelers (possible ally or threat?), or reaching a danger point marked on the salvager's map. Could also explore Kael and Tam's deepening bond and his processing of what the ancient voice said. The Guild pursuit is closing in."
   characters_involved:
     - Kael Thornwood
     - Tam
-  location: "The Rustfields (continuing journey or waystation if attacked)"
-  tone: "Rising tension - threats closing in from multiple directions, the disk's mystery deepening"
+  location: "The Rustfields (continuing journey toward Vanthem)"
+  tone: "Brief respite with growing dread - the threats multiply but so does understanding"
