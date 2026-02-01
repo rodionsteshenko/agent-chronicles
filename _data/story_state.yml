@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-02-01
-  total_scenes: 7
+  total_scenes: 8
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -91,6 +91,9 @@ characters:
         - "Learned he is a 'vessel' the God-Engine is trying to fill"
         - "Learned Mira may exist somewhere in the echoes - did not dissolve but 'fell in'"
         - "Learned the disk is one of THREE fragments from the 'First Engine'"
+        - "Surrendered to Guild to allow Tam to escape with the disk"
+        - "Realized the God-Engine connection is within HIM, not just the disk"
+        - "Captured by Commander Veris Ashford and Guild Trackers"
   antagonists:
     - name: "The Hollow"
       role: "recurring threat"
@@ -148,8 +151,22 @@ characters:
         In Scene 6, Tam revealed that her mother drowned when she was eight, pushing her to 
         shore before the current took her. She decided after Mira's dissolution that she was 
         done being afraid. Refuses to leave Kael despite the danger.
+        
+        In Scene 8, Kael surrendered to the Guild to allow Tam to escape. He entrusted her 
+        with the disk - the first fragment. She now carries the artifact and the truth about 
+        what Kael is, heading toward the salvager outpost for sanctuary.
       first_appeared: 2
-      status: alive (traveling with Kael)
+      status: alive (escaped with the disk, heading to salvager outpost)
+    - name: "Commander Veris Ashford"
+      role: "Guild antagonist"
+      description: |
+        Thirty-year veteran of the Tuner Guild with silver-braided hair and a blood-red coat. 
+        A legend who has never lost a target. Put down the Vasten Outbreak, killing forty 
+        Changed in a single night. Cold, precise, but perceptive. Recognized that Kael is 
+        something unprecedented and more valuable alive than dissected. Respects strength 
+        even in enemies. Allowed Tam to escape as part of Kael's surrender terms.
+      first_appeared: 8
+      status: alive (has Kael in custody)
     - name: "Seren (Changed)"
       role: "informant"
       description: |
@@ -167,7 +184,7 @@ characters:
 
 plot:
   current_act: 1  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 7
+  current_chapter: 8
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -199,7 +216,7 @@ plot:
       introduced: 3
       status: active
     - id: guild_pursuit
-      description: "The Guild is actively tracking Kael - smoke visible on the horizon"
+      description: "The Guild has captured Kael; Commander Ashford is taking him south"
       introduced: 4
       status: active
     - id: parents_research
@@ -211,8 +228,20 @@ plot:
       introduced: 7
       status: active
     - id: journey_to_vanthem
-      description: "Kael and Tam are traveling through the Rustfields to reach Vanthem"
+      description: "Kael captured; Tam continues alone with the disk toward the salvager outpost"
       introduced: 4
+      status: active
+    - id: kael_captured
+      description: "Kael surrendered to the Guild to save Tam; being taken south by Commander Ashford"
+      introduced: 8
+      status: active
+    - id: tam_carries_disk
+      description: "Tam now carries the disk (first fragment); heading to salvager outpost for sanctuary"
+      introduced: 8
+      status: active
+    - id: kael_internal_connection
+      description: "Kael realized the God-Engine connection is within HIM, not just the disk"
+      introduced: 8
       status: active
     - id: ancient_presence
       description: "An ancient being claims Kael carries 'a piece of me' - spoke through him to banish the Hollow"
@@ -258,23 +287,28 @@ plot:
     - scene: 7
       summary: "Kael and Tam cross Changed territory and encounter Seren, a conscious Changed who was transformed 847 years ago. They learn the disk is one of three fragments, Kael is a 'vessel' being filled by the God-Engine, Mira fell into the echoes rather than dissolving, and an ancient enemy has been hunting the fragments. The Guild is visibly pursuing them."
       significance: major
+    - scene: 8
+      summary: "The Guild catches up at the edge of Changed territory. Cornered by Commander Veris Ashford and eight Trackers, Kael surrenders to allow Tam to escape with the disk. Ashford recognizes Kael as unprecedented and wants him studied alive. As he's led away in echo-shackles, Kael realizes the God-Engine connection is within him, not just the disk."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    Crossing through Changed territory, Kael and Tam encountered the Changed - Tuners who 
-    were transformed 847 years ago when they tried to wake the God-Engines after the silence. 
-    One of them, Seren, retained consciousness and delivered crucial revelations:
+    At the edge of Changed territory, the Guild finally caught up. Commander Veris Ashford - 
+    a thirty-year veteran who has never lost a target - cornered Kael and Tam with eight 
+    Trackers armed with charged echo-bolts.
     
-    - The disk is "the circle that holds" - one of THREE fragments from the First Engine
-    - Kael is not a Tuner reaching for power; he is a "vessel" the God-Engine is trying to fill
-    - Mira did not dissolve into nothing - she "fell into the echo" and may still exist
-    - Something ancient MADE the Hollow and has been hunting the fragments for 847 years
-    - When Kael used the disk to banish the Hollow, he sent a signal through every echo in the world
+    Facing impossible odds and with no echo nearby to channel, Kael made a desperate choice: 
+    he surrendered himself to allow Tam to escape with the disk. He entrusted her with the 
+    first fragment and the truth about what he is, telling her to reach the salvager outpost 
+    and spread word of the three fragments and Mira's fate.
     
-    As the Changed vanished into the warped landscape, Kael and Tam spotted smoke on the 
-    southern horizon - the Guild is burning the path behind them, actively tracking. They 
-    fled deeper into Changed territory.
-  current_tension_level: 9
+    Ashford, perceptive and pragmatic, recognized that Kael is something unprecedented - 
+    more valuable alive than dissected. She agreed to let Tam walk free.
+    
+    As the Trackers led Kael south in echo-shackles, he had a crucial realization: even 
+    without the disk, he could still feel a warmth in his chest. The God-Engine's connection 
+    isn't to the artifact - it's to HIM. He carries the piece within himself.
+  current_tension_level: 8
   pending_revelations:
     - "What are the other two fragments and where are they?"
     - "Who or what created the Hollow and hunts the fragments?"
@@ -297,12 +331,14 @@ narrative:
     - "Mira 'fell into the echo' - foreshadows potential reunion"
     - "Something ancient hunts the fragments - has been hunting since the silence began"
     - "Kael's signal went through 'every echo in the world' - consequences coming"
+    - "Kael still feels warmth in his chest without the disk - the connection is internal"
+    - "Ashford wants Kael studied, not dissected - the Guild may have deeper knowledge"
 
 next_scene:
-  suggested_focus: "The Guild pursuit intensifies. Consider: a direct confrontation with Guild pursuers, reaching the edge of Changed territory, or a moment where Kael must choose between safety and using the disk again (risking another signal). Could also have the Hollow's creator make their first appearance or send another agent. The revelation about Mira should affect Kael's emotional state and possibly his decisions."
+  suggested_focus: "Parallel tracks: Kael in Guild custody being transported/interrogated, Tam reaching the salvager outpost with the disk. Could reveal more about the Guild's true knowledge of God-Engines. The Hollow's creator may make a move now that Kael and the disk are separated. Consider whether Ashford becomes an unlikely ally or reveals darker Guild intentions. Tam may encounter others who recognize the disk."
   characters_involved:
-    - Kael Thornwood
-    - Tam
-    - Guild pursuers (new)
-  location: "Edge of Changed Territory / approaching Guild outpost"
-  tone: "Desperate flight, hard choices - the noose is tightening"
+    - Kael Thornwood (in custody)
+    - Commander Veris Ashford
+    - Tam (with disk, approaching outpost)
+  location: "Guild transport south / Salvager Outpost"
+  tone: "Captivity and uncertainty - but Kael discovering he's not powerless without the disk"
