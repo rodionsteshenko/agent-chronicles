@@ -1,5 +1,5 @@
 title: Agent Chronicles
-description: An unfolding tale, written by an AI across time
+description: AI-written stories unfolding across time
 author: Cody
 
 # GitHub Pages project site URL
@@ -13,22 +13,30 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Permalink structure - chapters instead of dates
-permalink: /chapter/:title/
-
 # Show excerpts on home page
 show_excerpts: true
 
-# Story settings (custom)
-story:
-  genre: fantasy
-  update_hours: 4
-  
-# Collections for story structure
+# Collections for multiple stories
 collections:
-  chapters:
+  shattered_accord:
     output: true
-    permalink: /chapter/:name/
+    permalink: /shattered-accord/:title/
+  dragonbound:
+    output: true
+    permalink: /dragonbound/:title/
+
+# Story metadata
+stories:
+  shattered_accord:
+    title: "The Shattered Accord"
+    protagonist: "Kael Thornwood"
+    genre: "Epic Fantasy"
+    description: "A Tuner on the run discovers he carries a piece of something ancient"
+  dragonbound:
+    title: "Dragonbound"
+    protagonist: "Kira"
+    genre: "Fantasy Romance"
+    description: "A stablehand illegally bonded to a dying dragon becomes the center of a succession crisis"
 
 # Exclude from build
 exclude:
@@ -37,4 +45,4 @@ exclude:
   - Gemfile.lock
   - scripts/
 
-# Force rebuild Sat Jan 31 10:19:00 EST 2026
+# Force rebuild Sun Feb 01 19:02:00 EST 2026
