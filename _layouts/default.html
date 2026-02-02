@@ -25,9 +25,9 @@
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <p class="site-tagline">{{ site.description }}</p>
       <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}">The Tale</a>
-        <a href="{{ '/story/' | relative_url }}">Story So Far</a>
-        <a href="{{ '/characters/' | relative_url }}">Characters</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/shattered-accord/' | relative_url }}">The Shattered Accord</a>
+        <a href="{{ '/dragonbound/' | relative_url }}">Dragonbound</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
     </div>
@@ -35,75 +35,7 @@
 
   <main class="page-content">
     <div class="wrapper">
-      {% comment %} Story So Far - collapsible summary on all pages {% endcomment %}
-      {% if site.data.story_state.meta.status != 'not_started' %}
-      <details class="story-so-far">
-        <summary>📖 Story So Far{% if page.chapter %} (up to Chapter {{ page.chapter }}){% endif %}</summary>
-        <div class="story-so-far-content">
-          {% if site.data.story_state.plot.arc_summary %}
-          <p class="arc-summary"><strong>The Tale:</strong> {{ site.data.story_state.plot.arc_summary | strip_newlines }}</p>
-          {% endif %}
-          
-          {% comment %} Count events that match our filter {% endcomment %}
-          {% assign events_to_show = 0 %}
-          {% for event in site.data.story_state.plot.events %}
-            {% if page.chapter %}
-              {% if event.scene < page.chapter %}
-                {% assign events_to_show = events_to_show | plus: 1 %}
-              {% endif %}
-            {% else %}
-              {% assign events_to_show = events_to_show | plus: 1 %}
-            {% endif %}
-          {% endfor %}
-          
-          {% if events_to_show > 0 %}
-          <div class="events-list">
-            <strong>What's Happened:</strong>
-            <ul>
-            {% for event in site.data.story_state.plot.events %}
-              {% if page.chapter %}
-                {% if event.scene < page.chapter %}
-                  <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
-                {% endif %}
-              {% else %}
-                <li><span class="event-chapter">Ch. {{ event.scene }}:</span> {{ event.summary }}</li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          
-          {% comment %} Count threads that match our filter {% endcomment %}
-          {% assign threads_to_show = 0 %}
-          {% for thread in site.data.story_state.plot.active_threads %}
-            {% if page.chapter %}
-              {% if thread.introduced < page.chapter %}
-                {% assign threads_to_show = threads_to_show | plus: 1 %}
-              {% endif %}
-            {% else %}
-              {% assign threads_to_show = threads_to_show | plus: 1 %}
-            {% endif %}
-          {% endfor %}
-          
-          {% if threads_to_show > 0 %}
-          <div class="threads-list">
-            <strong>Active Threads:</strong>
-            <ul>
-            {% for thread in site.data.story_state.plot.active_threads %}
-              {% if page.chapter %}
-                {% if thread.introduced < page.chapter %}
-                  <li>{{ thread.description }} <span class="thread-intro">(Ch. {{ thread.introduced }})</span></li>
-                {% endif %}
-              {% else %}
-                <li>{{ thread.description }} <span class="thread-intro">(Ch. {{ thread.introduced }})</span></li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-        </div>
-      </details>
-      {% endif %}
+      {% comment %} Story So Far - only show on scene pages, not landing pages {% endcomment %}
       
       {{ content }}
     </div>
