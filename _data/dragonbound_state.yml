@@ -1,0 +1,92 @@
+# Dragonbound Story State
+# Fantasy Romance - Kira's journey from stablehand to dragonbonded
+
+meta:
+  title: "Dragonbound"
+  status: "in_progress"
+  started: "2026-02-01"
+  last_updated: "2026-02-02"
+  total_scenes: 2
+  genre: "Fantasy Romance"
+
+characters:
+  protagonist:
+    name: "Kira"
+    role: "Stablehand turned dragonbonded"
+    age: 19
+    traits:
+      - "Invisible among nobles"
+      - "Reads dragons better than anyone"
+      - "No family name"
+      - "Carries an illegal bond"
+    arc: "From invisible servant to political threat"
+    
+  dragons:
+    - name: "Sorrenvex"
+      status: "Dying/bonded to Kira"
+      details: "Ancient dragon, unbonded for 50 years since Lord Aldric's death. Purple scales faded to grey. Chose Kira with his dying breath."
+    - name: "Thornscale"
+      status: "Royal pen dragon"
+      details: "Mentioned, snaps at feeders"
+    - name: "Ashwing"  
+      status: "Royal pen dragon"
+      details: "Mentioned, rumbles when pleased"
+
+  supporting:
+    - name: "Marden"
+      role: "Head keeper"
+      details: "Round-bellied, perpetually tired, stopped caring years ago"
+
+  potential_love_interests:
+    - "Two princes (mentioned, not yet introduced)"
+
+plot:
+  current_act: 1
+  current_chapter: "The Dying Flame"
+  
+  setup:
+    - "Dragonbond is how nobles rule - grants power, long life, dragonfire"
+    - "Cannot sit on throne without a bonded dragon"
+    - "Servants cannot bond with dragons"
+    - "Hidden eggs exist somewhere"
+    
+  events:
+    - scene: 1
+      title: "The Dying Flame"
+      summary: "Kira visits dying Sorrenvex in the deep cavern. Against all laws and precedent, the ancient dragon speaks into her mind, beginning an impossible bond."
+    - scene: 2
+      title: "The Weight of Centuries"
+      summary: "Sorrenvex completes the forbidden bond, flooding Kira with memories - including visions of Aldric's murder, the conspirators responsible, and the location of 12 hidden dragon eggs. He dies, leaving Kira with a visible dragon mark she cannot hide and secrets that could topple the kingdom."
+
+  active_threads:
+    - "Sorrenvex's dying bond with Kira - what memories will transfer?"
+    - "The illegal nature of a servant being dragonbonded"
+    - "What was Sorrenvex waiting 50 years for?"
+    - "Two princes and the succession crisis"
+    - "Hidden dragon eggs"
+
+  foreshadowing:
+    - "Sorrenvex waited 50 years for 'something' - chose Kira deliberately"
+    - "Lord Aldric the Elder's death and secrets"
+
+world:
+  name: "Valdris"
+  magic_system:
+    - "Dragonbond: magical link between highborn and dragon hatchlings"
+    - "Grants: power, extended life, shared senses, ability to channel dragonfire"
+    - "Blood magic binds the bond"
+  politics:
+    - "Noble houses rule through dragonbond"
+    - "No dragon = no throne"
+    - "Succession crisis brewing"
+  locations:
+    - name: "Royal Dragon Pens"
+      details: "Where Kira works, includes deep caverns"
+
+narrative:
+  tone: "Fantasy romance with political intrigue"
+  themes:
+    - "Power and who deserves it"
+    - "The invisible becoming visible"
+    - "Bonds that transcend class"
+  previous_scene_summary: "Sorrenvex completed the forbidden bond with Kira, transferring three centuries of memories including the truth about Lord Aldric's murder (poison, by conspirators still in court), and the location of 12 hidden dragon eggs. The bond left a visible mark on her wrist - proof of bonding that she cannot hide. Sorrenvex died, and the death bell now tolls. Kira must disappear before anyone sees her mark."
