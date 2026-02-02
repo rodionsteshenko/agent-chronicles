@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-02-02
-  total_scenes: 11
+  total_scenes: 12
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -24,10 +24,10 @@ world:
     warped by unstable magic.
   locations:
     - name: "Vanthem"
-      description: "A city built into the ribcage of a fallen God-Engine. The ribs rise three hundred feet high, rusted metal thick as castle walls, curved in patterns that defy geometry. Buildings cling to them like barnacles. At the center, the heart still glows amber, a sphere the size of a cathedral suspended by cables and scaffolding. The God-Engine's name was Vaelith, and it is a prison for a First Engineer. As of Scene 11, the heart has gone DARK for the first time in 800 years - Kael locked the door."
+      description: "A city built into the ribcage of a fallen God-Engine. The ribs rise three hundred feet high, rusted metal thick as castle walls, curved in patterns that defy geometry. Buildings cling to them like barnacles. At the center, the heart has gone DARK for the first time in 800 years after Kael locked Vaelith's cage. The city is in mourning and chaos, its people having lost the amber light that defined their lives for generations."
       first_appeared: 10
     - name: "Guild Compound (Vanthem)"
-      description: "Built into the base of the fourth rib. A fortress of polished metal and precisely cut stone, filled with equipment for studying echoes and Tuners. Contains the circular resonance chamber where the climactic battle took place. After Scene 11, the compound is in Guild hands but damaged, with many personnel fled or surrendered to the salvagers."
+      description: "Built into the base of the fourth rib. Now under salvager control after the rescue mission. Contains the resonance chamber where Kael locked Vaelith away. Many Guild personnel fled or surrendered. Commander Ashford remains, uncertain of her loyalties. Magister Torwen is in the infirmary, barely alive but still speaking."
       first_appeared: 10
     - name: "The Rustfields"
       description: "Plains littered with ancient machine debris, dangerous echo-storms roll through weekly."
@@ -44,6 +44,9 @@ world:
     - name: "Salvager Outpost"
       description: "A fortified settlement built from salvaged God-Engine plating and ancient machine parts. Features walls made of salvaged plating, watchtowers of gears and timber, and a massive turbine housing converted into the main hall. Led by Ren Valdris. The salvagers guard a second fragment of the First Engine and have a secret history with the God-Engines that the Guild believes is extinct."
       first_appeared: 9
+    - name: "The Ruined City (South)"
+      description: "A forgotten city far to the south whose name was lost before the Silence began. One of the six other God-Engines rests here, and the First Engineer within it has just opened its eyes after sensing the key turn."
+      first_appeared: 12 (mentioned)
 
 magic_system:
   name: "Echo-Tuning"
@@ -68,15 +71,12 @@ characters:
         Cynical, guarded, but deeply loyal to the few people he lets close. Uses humor 
         to deflect. Haunted by the moment he watched his sister fade.
         
-        In Scene 11, Kael achieved the impossible: he LOCKED Vaelith back in its cage 
-        by channeling eight centuries of accumulated echo-power through the reunited 
-        disk. With Mira's voice guiding him from within the echoes, he turned the key 
-        and changed what it opens. The disk's symbols merged into a complete circle 
-        with a single point at the center. Vanthem's heart went dark for the first 
-        time in 800 years.
-        
-        But there are six more God-Engines. Six more First Engineers. And they all 
-        heard the key turn.
+        In Scene 12, Kael learned more about his nature from the dying Torwen: he is 
+        not just a vessel but a LOCK - someone with the purpose to seal the First 
+        Engineers away. His parents knew what he was and fled with him hoping to escape 
+        his destiny. He now understands that the other six First Engineers will test him, 
+        trying to break their own cages. He and the salvagers plan to find the remaining 
+        fragments before their enemies do.
       first_appeared: 1
       status: alive
       arc_notes:
@@ -104,6 +104,10 @@ characters:
         - "Heard Mira's voice from within the echoes - she helped him resist Vaelith"
         - "Changed the disk's purpose - from key to lock"
         - "Vanthem's heart went dark after the locking"
+        - "Learned from Torwen that he is a LOCK, not just a vessel - this is his purpose"
+        - "Learned his parents were researchers who understood what he was and fled"
+        - "Accepted alliance with salvagers - plans to find remaining fragments"
+        - "Acknowledged his feelings for Tam (implied)"
   antagonists:
     - name: "The Hollow"
       role: "recurring threat"
@@ -133,6 +137,14 @@ characters:
         God-Engines, all awakening.
       first_appeared: 10 (named; spoke through Kael)
       status: re-imprisoned (cage locked)
+    - name: "The Southern Engineer"
+      role: "awakening antagonist"
+      description: |
+        One of the six other First Engineers, imprisoned in a God-Engine within a ruined 
+        city far to the south. It opened its eyes at the end of Scene 12 after sensing 
+        Kael turn the key on Vaelith's cage.
+      first_appeared: 12 (mentioned)
+      status: awakening
     - name: "The Hollow's Creator"
       role: "unseen antagonist"
       description: |
@@ -142,12 +154,12 @@ characters:
         disk to banish the Hollow, he "sent a signal through every echo in the world." 
         The creator will have heard it.
         
-        Likely connected to or is Vaelith, the First Engineer imprisoned in Vanthem.
+        Likely has or knows the location of the THIRD fragment.
       first_appeared: 7 (mentioned)
-      status: active (hunting)
+      status: active (has or knows location of third fragment)
   supporting:
     - name: "Mira Thornwood"
-      role: "deceased sister (appears in messages/memories/echoes)"
+      role: "deceased sister (exists in the echoes)"
       description: |
         Kael's older sister, a brilliant Tuner who pushed too far. Her dissolution haunts him. 
         Somehow sent a message from beyond. According to the Changed, she did not dissolve 
@@ -172,32 +184,31 @@ characters:
       first_appeared: 2
       status: alive (remained in Caderyn's Rest)
     - name: "Tam"
-      role: "traveling companion / partner"
+      role: "traveling companion / love interest"
       description: |
         Sharp-tongued and observant, Tam is one of the few people in Caderyn's Rest who 
         treats Kael normally. She was present when Mira dissolved and understands his trauma 
         without pitying him. Uses sarcasm as a shield, but genuinely cares.
         
-        In Scene 11, Tam led the salvagers through the Guild compound to find Kael. When 
-        she entered the resonance chamber and returned the disk to him, she enabled the 
-        confrontation that locked Vaelith away. Her bond with Kael allowed her to find him 
-        even through the chaos. She is now reunited with Kael in the aftermath.
+        In Scene 12, Tam waited outside the infirmary while Kael spoke with Torwen. She 
+        realized she loves Kael, though she hasn't said it aloud. Their bond through the 
+        disk remains strong - it grows warm in her presence and she can sense him through it.
       first_appeared: 2
       status: alive (with Kael in Vanthem)
     - name: "Commander Veris Ashford"
-      role: "Guild commander (ambiguous ally)"
+      role: "Guild commander (conflicted)"
       description: |
         Thirty-year veteran of the Tuner Guild with silver-braided hair and a blood-red coat. 
         A legend who has never lost a target. Put down the Vasten Outbreak, killing forty 
         Changed in a single night. Cold, precise, but perceptive.
         
-        In Scene 11, Ashford tried to warn Kael about Vaelith's escape attempt and brought 
-        him to the resonance chamber. When Torwen revealed his plan to use Kael to 
-        permanently seal Vaelith, she hesitated but did not intervene. After the sealing, 
-        she stood shell-shocked, uncertain of what side she's on. Her worldview has been 
-        shattered by what she witnessed.
+        In Scene 12, Ashford chose to stay in the compound rather than flee with other 
+        Guild members. She spent the night alone in Torwen's study, reading forbidden books 
+        and learning about the true nature of the First Engineers. She discovered a diagram 
+        showing seven figures - siblings - connected by lines of power. Her certainty has 
+        been shattered; her future allegiance remains uncertain.
       first_appeared: 8
-      status: alive (in Vanthem, allegiance uncertain)
+      status: alive (in Vanthem, allegiance uncertain, reading forbidden Guild texts)
     - name: "Seren (Changed)"
       role: "informant"
       description: |
@@ -208,24 +219,27 @@ characters:
       first_appeared: 7
       status: alive (in Changed territory)
     - name: "Magister Elan Torwen"
-      role: "Guild scholar / interrogator"
+      role: "Guild scholar (dying)"
       description: |
         Head of Applied Theology at the Guild compound in Vanthem. Ancient, with paper-thin 
-        skin and milky blue eyes that see perfectly fine. 
+        skin and milky blue eyes that see perfectly fine.
         
-        In Scene 11, Torwen revealed his true purpose: using Kael and the disk in the 
-        resonance chamber to permanently seal Vaelith. He had been preparing for this 
-        moment for generations. When the sealing succeeded, his instruments shattered 
-        and he stood frozen, streaming tears. His life's work is complete, but at what 
-        cost remains unclear.
+        In Scene 12, Torwen revealed more to Kael: that Kael is a LOCK, not just a vessel, 
+        with a purpose to seal the First Engineers. His family has served the Guild for 
+        300 years waiting for someone like Kael. He told Kael that his parents knew what 
+        he was and fled trying to escape his destiny. Torwen is now barely alive, his body 
+        damaged beyond what healers can repair. His knowledge may be crucial going forward.
       first_appeared: 10
-      status: alive (in Vanthem, incapacitated by the resonance)
+      status: dying (in infirmary, still has knowledge to share)
     - name: "Sera"
       role: "salvager lieutenant"
       description: |
         Valdris's second in command at the salvager outpost. Missing her left eye. Has deep 
         knowledge of the salvagers' history, including that they have members secretly embedded 
         within the Guild itself. Led the distraction team during the rescue mission.
+        
+        In Scene 12, she reported to Valdris about Torwen awakening, now wearing a fresh 
+        bandage over her missing eye after losing another in the fighting.
       first_appeared: 10
       status: alive (in Vanthem)
     - name: "Ren Valdris"
@@ -234,16 +248,16 @@ characters:
         Tall, weathered man with a gray-threaded beard and hands scarred by decades of 
         working with dangerous metal. Leads the salvager outpost in the Rustfields.
         
-        In Scene 11, Valdris led the rescue mission into the Guild compound. He found 
-        Kael and Tam in the aftermath of the resonance chamber confrontation and is now 
-        trying to understand what happened. The salvagers have taken control of parts 
-        of the compound.
+        In Scene 12, Valdris committed the salvagers fully to Kael's cause. After 800 
+        years of protecting their fragment without knowing its true purpose, he now 
+        understands the stakes. He plans to move soon before the Guild can regroup or 
+        the city guard mobilizes against them.
       first_appeared: 9
-      status: alive (in Vanthem)
+      status: alive (in Vanthem, allied with Kael)
 
 plot:
   current_act: 2  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 11
+  current_chapter: 12
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -257,8 +271,11 @@ plot:
     Vaelith back in its cage, guided by Mira's voice from within the echoes. The 
     heart of Vanthem went dark for the first time in 800 years.
     
-    But there are six more God-Engines. Six more First Engineers. And they all 
-    heard the key turn.
+    Now the aftermath unfolds. Vanthem grieves the loss of its eternal light. The 
+    salvagers control the Guild compound. Torwen, dying, has revealed that Kael 
+    is not just a vessel but a LOCK - with the purpose to seal the First Engineers. 
+    Far to the south, another First Engineer opens its eyes. There are six more 
+    God-Engines, six more cages, and they all heard the key turn.
   active_threads:
     - id: mira_message
       description: "Kael received a message from his dead sister Mira"
@@ -267,38 +284,26 @@ plot:
     - id: mira_in_echoes
       description: "Mira did not dissolve - she fell into the echoes and exists there. Her voice helped Kael lock Vaelith."
       introduced: 7
-      status: active (confirmed in Scene 11 - she can communicate during high resonance)
+      status: active (potential rescue mission in future)
     - id: hollow_threat
       description: "The Hollow was banished but not destroyed - it will return"
       introduced: 3
       status: active
-    - id: kaels_unique_power
-      description: "Kael can fold his echo inward and channel wild magic. He locked a First Engineer back in its cage."
-      introduced: 3
-      status: active (power confirmed and expanded)
-    - id: parents_research
-      description: "Kael's parents were God-Engine researchers who found something terrifying"
-      introduced: 4
+    - id: kaels_lock_nature
+      description: "Kael is a LOCK - someone with the purpose to seal First Engineers, not just a vessel"
+      introduced: 12
       status: active
+    - id: parents_research
+      description: "Kael's parents were God-Engine researchers who knew what Kael was and fled"
+      introduced: 4
+      status: active (confirmed by Torwen in Scene 12)
     - id: three_fragments
       description: "The disk is one of THREE fragments from the First Engine - now changed into a lock"
       introduced: 7
-      status: active (first fragment now serves as a lock, not a key)
-    - id: kael_internal_connection
-      description: "Kael realized the God-Engine connection is within HIM, not just the disk"
-      introduced: 8
-      status: active
-    - id: vessel_nature
-      description: "Kael is a 'vessel' the God-Engine is trying to fill - he resisted and locked it away"
+      status: active (Kael has one, salvagers have second, third with enemy)
+    - id: hollow_creator_third_fragment
+      description: "The Hollow's creator has or knows the location of the third fragment"
       introduced: 7
-      status: active (vessel resisted; Vaelith locked)
-    - id: hollow_creator
-      description: "Something ancient made the Hollow and has been hunting the three fragments for 847 years"
-      introduced: 7
-      status: active
-    - id: salvager_second_fragment
-      description: "The salvagers guard a SECOND fragment of the First Engine, hidden somewhere the Guild has never found"
-      introduced: 9
       status: active
     - id: god_engines_as_prisons
       description: "The God-Engines are PRISONS for First Engineers - ancient beings who built them to contain themselves"
@@ -307,23 +312,43 @@ plot:
     - id: vaelith_locked
       description: "Vaelith has been re-imprisoned - Kael locked the cage using the disk"
       introduced: 11
-      status: active
+      status: active (locked but not destroyed)
     - id: six_more_engines
       description: "There are SIX more God-Engines, six more First Engineers, and they all heard the key turn"
       introduced: 11
-      status: active
+      status: active (one in the south is awakening)
     - id: disk_transformed
       description: "The disk's symbols merged into a complete circle with a central point - it's now a LOCK, not a key"
       introduced: 11
       status: active
     - id: vanthem_heart_dark
-      description: "Vanthem's heart went dark for the first time in 800 years after Kael locked Vaelith away"
+      description: "Vanthem's heart went dark for the first time in 800 years - the city is in mourning"
       introduced: 11
       status: active
+    - id: salvager_second_fragment
+      description: "The salvagers guard a SECOND fragment of the First Engine, hidden somewhere the Guild has never found"
+      introduced: 9
+      status: active (salvagers now fully allied with Kael)
     - id: salvager_spies
       description: "The salvagers have members secretly embedded in the Guild, including at the Vanthem compound"
       introduced: 10
-      status: active (used during rescue)
+      status: active
+    - id: ashford_forbidden_knowledge
+      description: "Ashford is reading forbidden Guild texts about the First Engineers and the seven siblings"
+      introduced: 12
+      status: active
+    - id: southern_engineer_awakening
+      description: "A First Engineer in a ruined city to the south opened its eyes after sensing the key turn"
+      introduced: 12
+      status: active
+    - id: kael_tam_love
+      description: "Tam has realized she loves Kael; their bond through the disk is strong"
+      introduced: 12
+      status: active
+    - id: torwen_dying_knowledge
+      description: "Torwen is dying but still has crucial knowledge about the First Engineers and fragments"
+      introduced: 12
+      status: active
   resolved_threads:
     - id: village_knows
       description: "The villagers saw what Kael can do - word will spread"
@@ -368,8 +393,8 @@ plot:
     - id: previous_vessels
       description: "Ashford revealed Kael is 'not the first' vessel in 800 years, but the first who might survive"
       introduced: 9
-      resolved: 11
-      resolution: "Kael not only survived but LOCKED Vaelith away - unprecedented"
+      resolved: 12
+      resolution: "Kael is not just a vessel but a LOCK - his purpose is to seal the First Engineers"
     - id: vaelith_awakening
       description: "Vaelith, the First Engineer in Vanthem, is awakening and trying to escape through Kael"
       introduced: 10
@@ -380,6 +405,16 @@ plot:
       introduced: 10
       resolved: 11
       resolution: "Information was given, but Vaelith is now locked away and cannot act on it directly"
+    - id: kael_internal_connection
+      description: "Kael realized the God-Engine connection is within HIM, not just the disk"
+      introduced: 8
+      resolved: 12
+      resolution: "Confirmed - Kael is a LOCK, his nature is the key to sealing the Engineers"
+    - id: vessel_nature
+      description: "Kael is a 'vessel' the God-Engine is trying to fill - he resisted and locked it away"
+      introduced: 7
+      resolved: 12
+      resolution: "Kael is more than a vessel - he is a LOCK with the purpose to seal the Engineers"
   events:
     - scene: 1
       summary: "Kael receives an impossible message from his dissolved sister Mira during an echo-storm"
@@ -414,60 +449,70 @@ plot:
     - scene: 11
       summary: "The rescue mission collides with Vaelith's awakening. Tam leads the salvagers through the compound to find Kael. In the resonance chamber, Vaelith nearly escapes through Kael, but Mira's voice reaches him from the echoes. Kael channels eight centuries of echo-power through the reunited disk and LOCKS Vaelith back in its cage. The disk transforms from key to lock. Vanthem's heart goes dark for the first time in 800 years. But there are six more God-Engines, six more First Engineers, and they all heard the key turn."
       significance: major
+    - scene: 12
+      summary: "The aftermath. Vanthem wakes to darkness for the first time in 800 years, the city in grief and chaos. Ashford stays behind reading forbidden Guild texts about the seven siblings. Torwen, dying, reveals to Kael that he is a LOCK with the purpose to seal the First Engineers - his parents knew and fled. Tam realizes she loves Kael. Valdris commits the salvagers to finding the remaining fragments. Far to the south, another First Engineer opens its eyes."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    The rescue mission collided with Vaelith's awakening in the Guild compound. While 
-    salvagers created chaos at the eastern wall, Tam led a team through drainage tunnels 
-    to find Kael. Meanwhile, Ashford brought Kael to the resonance chamber where Magister 
-    Torwen revealed his true purpose: using Kael and the disk to permanently seal Vaelith.
+    The aftermath of Vaelith's imprisonment. Vanthem woke to darkness for the first time 
+    in 800 years, the city in grief as the God-Engine's amber heart went cold. The salvagers 
+    now control the Guild compound; most Guild members fled or surrendered.
     
-    When Tam entered the chamber and returned the disk to Kael, Vaelith made its move, 
-    nearly escaping through Kael's body. But Mira's voice reached Kael from within the 
-    echoes, guiding him to resist. Kael channeled eight centuries of accumulated echo-power 
-    and LOCKED Vaelith back in its cage, transforming the disk from key to lock. Its 
-    symbols merged into a complete circle with a central point.
+    Commander Ashford chose to stay, spending the night reading forbidden books in Torwen's 
+    study. She found a diagram of seven connected figures - siblings - and begins to 
+    understand the true scope of what they face.
     
-    Vanthem's heart went dark for the first time in 800 years. Valdris found them in the 
-    aftermath, asking what the hell just happened. Kael's answer: he locked the door. 
-    But there are six more doors, and they all just heard the key turn.
-  current_tension_level: 8
+    Magister Torwen, barely alive in the infirmary, revealed crucial information to Kael: 
+    he is not just a vessel but a LOCK, someone with the purpose to seal the First Engineers. 
+    His family served the Guild for 300 years waiting for someone like him. His parents 
+    knew what he was and fled, hoping to escape his destiny.
+    
+    Tam waited and realized she loves Kael. Valdris committed the salvagers fully to Kael's 
+    cause after 800 years of protecting their fragment without understanding its true purpose.
+    
+    As dawn broke over a city mourning its lost light, Kael and Valdris agreed to move soon - 
+    to find the remaining fragments before their enemies do. Far to the south, in a ruined 
+    city whose name was forgotten before the Silence, another First Engineer opened its eyes.
+  current_tension_level: 7
   pending_revelations:
-    - "Where is the salvagers' second fragment hidden?"
-    - "What is the THIRD fragment and who has it?"
+    - "Where exactly is the salvagers' second fragment hidden?"
+    - "What is the THIRD fragment and who controls it?"
     - "Can Mira be reached or rescued from within the echoes?"
-    - "Why is Kael specifically suited to be a 'vessel' when others died instantly?"
-    - "What did Kael's parents discover about the God-Engines?"
-    - "What happens now that six other First Engineers know the key can be turned?"
+    - "What did Kael's parents discover about the God-Engines before they fled?"
     - "What were the First Engineers 'becoming' that made them imprison themselves?"
-    - "What is the salvagers' secret history with the God-Engines?"
-    - "Will the Hollow return now that the echoes have been disrupted?"
-    - "What is Ashford's allegiance now that her worldview has been shattered?"
-    - "What will Torwen do now that his life's work is complete?"
+    - "How will the other six First Engineers respond to the key turning?"
+    - "Will Ashford join Kael's cause or return to the Guild?"
+    - "What knowledge does the dying Torwen still hold?"
+    - "Who or what is the Hollow's creator, and where is the third fragment?"
+    - "What will the people of Vanthem do now that their god has gone dark?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
-    - "Kael can do things other Tuners cannot - confirmed: he can lock First Engineers"
+    - "Kael can do things other Tuners cannot - confirmed: he is a LOCK, not just a vessel"
     - "Hollows being 'extinct' implies someone or something eliminated them before"
-    - "Kael's parents were God-Engine researchers who found something terrifying"
-    - "The disk responds only to Kael - he may be connected to something larger"
+    - "Kael's parents were God-Engine researchers who knew what he was and fled"
+    - "The disk responds only to Kael - he is its purpose"
     - "The complete circle pattern on the disk - the key became a lock"
     - "The Changed persist for 847 years - time moves differently for those in the echo"
     - "Mira's voice reached Kael during high resonance - foreshadows potential rescue"
-    - "The salvagers guard a second fragment - and their history may reveal more about the First Engineers"
+    - "The salvagers guard a second fragment - they will need to retrieve it"
     - "Six God-Engines heard the key turn - they will respond"
-    - "Vanthem's heart went dark - what does this mean for the city and its people?"
+    - "Vanthem's heart went dark - the city will change, perhaps turn against them"
     - "Torwen prepared for this moment for generations - the Guild has deeper knowledge"
-    - "Ashford is shell-shocked - her loyalty may shift"
-    - "Kael said he 'changed what it opens' - the disk may now have new capabilities"
+    - "Ashford found a diagram of seven siblings - the scope is larger than they knew"
+    - "The southern First Engineer opened its eyes - the race has begun"
+    - "Tam loves Kael - this bond may be tested"
+    - "Torwen is dying but still has knowledge - time is running out to learn from him"
 
 next_scene:
-  suggested_focus: "The aftermath. Kael and Tam must decide what to do next as the dust settles. The salvagers now control parts of the Guild compound. Ashford and the remaining Guild members must choose sides. Torwen, if he recovers, has knowledge they need. The people of Vanthem are dealing with the heart going dark. And somewhere, six other First Engineers are responding to what just happened. This is a breathing moment before the next storm - time for revelations, alliances, and planning."
+  suggested_focus: "The departure. Kael, Tam, and the salvagers must leave Vanthem before the city turns against them. They need to reach the salvager outpost and retrieve the second fragment. But they should extract more knowledge from Torwen first, and deal with Ashford - will she come with them or stay? The journey will not be easy; word of the heart's darkness will spread, and the Guild will be hunting them. Meanwhile, the southern First Engineer is stirring."
   characters_involved:
-    - Kael Thornwood (recovering from the confrontation)
-    - Tam (reunited with Kael)
-    - Ren Valdris (assessing the situation)
-    - Commander Veris Ashford (allegiance uncertain)
-    - Magister Torwen (if conscious, has answers)
-  location: "Guild compound / Vanthem"
-  tone: "Aftermath - exhausted relief mixed with growing dread as the implications sink in"
+    - Kael Thornwood (leading the expedition)
+    - Tam (at his side)
+    - Ren Valdris (planning the route)
+    - Commander Veris Ashford (must make a choice)
+    - Magister Torwen (last chance for knowledge)
+    - Sera (organizing the salvagers)
+  location: "Departing Vanthem / journey north"
+  tone: "Urgent departure, hard choices, the race beginning"
