@@ -6,7 +6,7 @@ meta:
   tone: epic with moments of dark humor
   started: 2026-01-31
   last_updated: 2026-02-01
-  total_scenes: 8
+  total_scenes: 9
   status: in_progress  # not_started, in_progress, concluded
 
 world:
@@ -38,6 +38,9 @@ world:
     - name: "Changed Territory"
       description: "A section of the Rustfields where wild magic has permanently warped the landscape. Metal hums with resonance, trees grow with copper veins, pools reflect wrong skies. Home to the Changed - Tuners who were transformed 847 years ago when they tried to wake the God-Engines."
       first_appeared: 7
+    - name: "Salvager Outpost"
+      description: "A fortified settlement built from salvaged God-Engine plating and ancient machine parts. Features walls made of salvaged plating, watchtowers of gears and timber, and a massive turbine housing converted into the main hall. Led by Ren Valdris. The salvagers guard a second fragment of the First Engine and have a secret history with the God-Engines that the Guild believes is extinct."
+      first_appeared: 9
 
 magic_system:
   name: "Echo-Tuning"
@@ -142,7 +145,7 @@ characters:
       first_appeared: 2
       status: alive (remained in Caderyn's Rest)
     - name: "Tam"
-      role: "traveling companion"
+      role: "traveling companion / disk bearer"
       description: |
         Sharp-tongued and observant, Tam is one of the few people in Caderyn's Rest who 
         treats Kael normally. She was present when Mira dissolved and understands his trauma 
@@ -153,20 +156,29 @@ characters:
         done being afraid. Refuses to leave Kael despite the danger.
         
         In Scene 8, Kael surrendered to the Guild to allow Tam to escape. He entrusted her 
-        with the disk - the first fragment. She now carries the artifact and the truth about 
-        what Kael is, heading toward the salvager outpost for sanctuary.
+        with the disk - the first fragment.
+        
+        In Scene 9, Tam reached the salvager outpost and met Ren Valdris. She learned that 
+        the salvagers guard a SECOND fragment and are planning a rescue mission to free Kael 
+        from the Guild. The disk went cold when Kael surrendered, as if mourning. Despite 
+        exhaustion and fear, she completed her mission and is now allied with potential 
+        rescuers.
       first_appeared: 2
-      status: alive (escaped with the disk, heading to salvager outpost)
+      status: alive (at salvager outpost with the disk)
     - name: "Commander Veris Ashford"
-      role: "Guild antagonist"
+      role: "Guild antagonist (potential ally?)"
       description: |
         Thirty-year veteran of the Tuner Guild with silver-braided hair and a blood-red coat. 
         A legend who has never lost a target. Put down the Vasten Outbreak, killing forty 
         Changed in a single night. Cold, precise, but perceptive. Recognized that Kael is 
         something unprecedented and more valuable alive than dissected. Respects strength 
         even in enemies. Allowed Tam to escape as part of Kael's surrender terms.
+        
+        In Scene 9, Ashford revealed that Kael is "not the first" vessel in 800 years, 
+        but he's "the first who might survive." She knows more than she's said, and 
+        showed genuine worry when Kael demonstrated his shackles don't fully contain him.
       first_appeared: 8
-      status: alive (has Kael in custody)
+      status: alive (transporting Kael to Vanthem)
     - name: "Seren (Changed)"
       role: "informant"
       description: |
@@ -181,10 +193,24 @@ characters:
         Hollow to hunt for the fragments.
       first_appeared: 7
       status: alive (in Changed territory)
+    - name: "Ren Valdris"
+      role: "salvager leader / potential ally"
+      description: |
+        Tall, weathered man with a gray-threaded beard and hands scarred by decades of 
+        working with dangerous metal. Leads the salvager outpost in the Rustfields. 
+        Moves like someone who's seen combat.
+        
+        Revealed that his people have been guarding ANOTHER fragment of the First Engine 
+        for generations, hidden somewhere the Guild has never found. He identified Kael's 
+        disk as "the Key" - the circle that holds. Has people in Vanthem and is planning 
+        a rescue mission for Kael. Hinted that Ashford thinks some group is "extinct" - 
+        the salvagers may have a secret history with the God-Engines.
+      first_appeared: 9
+      status: alive (at salvager outpost, planning rescue)
 
 plot:
-  current_act: 1  # 1=setup, 2=confrontation, 3=resolution
-  current_chapter: 8
+  current_act: 2  # 1=setup, 2=confrontation, 3=resolution
+  current_chapter: 9
   arc_summary: |
     Something is waking the God-Engines. After centuries of silence, faint pulses 
     have been detected from multiple sites. The Tuner guilds are mobilizing. The 
@@ -259,6 +285,22 @@ plot:
       description: "Something ancient made the Hollow and has been hunting the three fragments for 847 years"
       introduced: 7
       status: active
+    - id: salvager_second_fragment
+      description: "The salvagers guard a SECOND fragment of the First Engine, hidden somewhere the Guild has never found"
+      introduced: 9
+      status: active
+    - id: rescue_mission
+      description: "Ren Valdris is planning a rescue mission to free Kael from Guild custody in Vanthem"
+      introduced: 9
+      status: active
+    - id: kael_tam_connection
+      description: "Kael can sense the disk (and Tam) across distance - a thread of warmth connects them"
+      introduced: 9
+      status: active
+    - id: previous_vessels
+      description: "Ashford revealed Kael is 'not the first' vessel in 800 years, but the first who might survive"
+      introduced: 9
+      status: active
   resolved_threads:
     - id: village_knows
       description: "The villagers saw what Kael can do - word will spread"
@@ -290,33 +332,37 @@ plot:
     - scene: 8
       summary: "The Guild catches up at the edge of Changed territory. Cornered by Commander Veris Ashford and eight Trackers, Kael surrenders to allow Tam to escape with the disk. Ashford recognizes Kael as unprecedented and wants him studied alive. As he's led away in echo-shackles, Kael realizes the God-Engine connection is within him, not just the disk."
       significance: major
+    - scene: 9
+      summary: "Parallel tracks: Tam reaches the salvager outpost and meets Ren Valdris, learning that the salvagers guard a SECOND fragment and are planning a rescue. Meanwhile, Kael discovers his echo-shackles can't fully contain him and Ashford reveals he's 'not the first' vessel in 800 years. A connection between Kael and the disk (with Tam) persists across distance."
+      significance: major
 
 narrative:
   previous_scene_summary: |
-    At the edge of Changed territory, the Guild finally caught up. Commander Veris Ashford - 
-    a thirty-year veteran who has never lost a target - cornered Kael and Tam with eight 
-    Trackers armed with charged echo-bolts.
+    The story split into parallel tracks. Tam reached the salvager outpost after a grueling 
+    trek across the Rustfields. There she met Ren Valdris, a grizzled leader whose people 
+    have been guarding a SECOND fragment of the First Engine for generations. The salvagers 
+    identified Kael's disk as "the Key" and revealed they have people in Vanthem - they're 
+    planning a rescue mission.
     
-    Facing impossible odds and with no echo nearby to channel, Kael made a desperate choice: 
-    he surrendered himself to allow Tam to escape with the disk. He entrusted her with the 
-    first fragment and the truth about what he is, telling her to reach the salvager outpost 
-    and spread word of the three fragments and Mira's fate.
+    Meanwhile, Kael traveled south in a Guild transport wagon with Commander Ashford. When 
+    he revealed that his echo-shackles were useless against him, Ashford dropped a bombshell: 
+    Kael is "not the first" vessel in 800 years, but he's "the first who might survive." 
+    The Guild knows more about the God-Engines than they've ever admitted.
     
-    Ashford, perceptive and pragmatic, recognized that Kael is something unprecedented - 
-    more valuable alive than dissected. She agreed to let Tam walk free.
-    
-    As the Trackers led Kael south in echo-shackles, he had a crucial realization: even 
-    without the disk, he could still feel a warmth in his chest. The God-Engine's connection 
-    isn't to the artifact - it's to HIM. He carries the piece within himself.
+    As the scene closed, Kael sensed a thin connection to the disk across the distance - 
+    and knew that Tam was still fighting.
   current_tension_level: 8
   pending_revelations:
-    - "What are the other two fragments and where are they?"
+    - "Where is the salvagers' second fragment hidden?"
+    - "What is the THIRD fragment and who has it?"
     - "Who or what created the Hollow and hunts the fragments?"
     - "Can Mira be found or reached within the echoes?"
     - "Why is Kael specifically suited to be a 'vessel'?"
     - "What did Kael's parents discover about the God-Engines?"
     - "What happens when the three fragments are reunited?"
     - "Who is 'the Architect' who shattered the First Engine?"
+    - "What happened to previous vessels? Why didn't they survive?"
+    - "What is the salvagers' secret history with the God-Engines?"
   foreshadowing:
     - "The echo was structured, like a message - implies someone can shape echoes deliberately"
     - "Mira's dissolution happened while she was 'reaching for something only she could see'"
@@ -333,12 +379,16 @@ narrative:
     - "Kael's signal went through 'every echo in the world' - consequences coming"
     - "Kael still feels warmth in his chest without the disk - the connection is internal"
     - "Ashford wants Kael studied, not dissected - the Guild may have deeper knowledge"
+    - "Kael is 'not the first' vessel - previous attempts failed"
+    - "The salvagers guard a second fragment - and think the Guild considers them extinct"
+    - "Kael and the disk remain connected across distance - vessel bond transcends proximity"
 
 next_scene:
-  suggested_focus: "Parallel tracks: Kael in Guild custody being transported/interrogated, Tam reaching the salvager outpost with the disk. Could reveal more about the Guild's true knowledge of God-Engines. The Hollow's creator may make a move now that Kael and the disk are separated. Consider whether Ashford becomes an unlikely ally or reveals darker Guild intentions. Tam may encounter others who recognize the disk."
+  suggested_focus: "Arrival in Vanthem. Kael sees the city built into a God-Engine's ribcage for the first time. Could explore what the Guild actually knows through interrogation or reveal. Meanwhile, the salvagers' rescue plan takes shape - what resources do they have in Vanthem? The Hollow's creator may make a move now that Kael is separated from the disk. Ashford's role becomes clearer: is she an antagonist or does she see Kael as humanity's best hope?"
   characters_involved:
-    - Kael Thornwood (in custody)
+    - Kael Thornwood (arriving in Vanthem)
     - Commander Veris Ashford
-    - Tam (with disk, approaching outpost)
-  location: "Guild transport south / Salvager Outpost"
-  tone: "Captivity and uncertainty - but Kael discovering he's not powerless without the disk"
+    - Tam (at salvager outpost, planning)
+    - Ren Valdris
+  location: "Vanthem (the city built into a God-Engine's ribcage)"
+  tone: "Wonder and dread - Kael sees what he's becoming part of; the stakes become tangible"
