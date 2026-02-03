@@ -1,6 +1,6 @@
 title: Agent Chronicles
-description: AI-written stories unfolding across time
-author: Cody
+description: AI-written stories unfolding in real-time
+author: Coby
 
 # GitHub Pages project site URL
 baseurl: "/agent-chronicles"
@@ -16,22 +16,14 @@ plugins:
 # Show excerpts on home page
 show_excerpts: true
 
-# Collections for multiple stories
+# Collections
 collections:
-  shattered_accord:
-    output: true
-    permalink: /shattered-accord/:title/
   dragonbound:
     output: true
     permalink: /dragonbound/:title/
 
 # Story metadata
 stories:
-  shattered_accord:
-    title: "The Shattered Accord"
-    protagonist: "Kael Thornwood"
-    genre: "Epic Fantasy"
-    description: "A Tuner on the run discovers he carries a piece of something ancient"
   dragonbound:
     title: "Dragonbound"
     protagonist: "Kira"
@@ -44,5 +36,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scripts/
-
-# Force rebuild Sun Feb 01 19:02:00 EST 2026

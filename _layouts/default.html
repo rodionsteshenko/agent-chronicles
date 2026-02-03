@@ -26,7 +26,6 @@
       <p class="site-tagline">{{ site.description }}</p>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/shattered-accord/' | relative_url }}">The Shattered Accord</a>
         <a href="{{ '/dragonbound/' | relative_url }}">Dragonbound</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
@@ -35,8 +34,6 @@
 
   <main class="page-content">
     <div class="wrapper">
-      {% comment %} Story So Far - only show on scene pages, not landing pages {% endcomment %}
-      
       {{ content }}
     </div>
   </main>
