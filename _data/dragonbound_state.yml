@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-03"
-  total_scenes: 3
+  last_updated: "2026-02-04"
+  total_scenes: 4
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,16 +29,19 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Deep in the volcanic mountains, in a chamber with Cael. Has just encountered an ancient creature (older than dragons) that guards the eggs and was expecting her."
+    current_state: "Newly bonded to TWELVE dragon hatchlings. Fleeing through the back tunnels of the Smoking Range with Cael. Has two days until the dragons are strong enough to fly. Varek's soldiers know her location."
     arc: "From invisible servant to political threat"
     
   dragons:
     - name: "Sorrenvex"
       status: "Dead - bonded to Kira in his dying breath"
       details: "Ancient dragon, unbonded for 50 years since Lord Aldric's death. Purple scales faded to grey. Transferred memories to Kira including: location of hidden eggs, truth of Aldric's murder."
-    - name: "Twelve Hidden Eggs"
-      status: "Hidden, location known only to Kira"
-      details: "In a volcanic chamber, route exists in Kira's transferred memories"
+    - name: "Pyreth"
+      status: "Returned to the earth's fire"
+      details: "The First Dragon, mother of all dragons. Scales shifting between every color. Laid the original clutch 1000 years ago. Entrusted her final children to Kira."
+    - name: "Twelve Hatchlings"
+      status: "Newly hatched, bonded to Kira"
+      details: "Each has distinct personality. One is storm-grey with lightning eyes, another gold and copper. One climbed onto Cael. Will be able to fly in two days."
 
   supporting:
     - name: "Marden"
@@ -82,27 +85,36 @@ plot:
       file: "2026-02-03-the-road-to-ash.md"
       summary: "Five days pass. Kira is hunted across the kingdom (wanted posters call her a murderer). She reaches a mountain pass but finds soldiers waiting at an abandoned mining town - Varek knows where she's heading. She meets Cael, a fellow fugitive who saw something in the palace. They enter the old mines together. In a volcanic chamber, they discover something ancient guarding the eggs - a creature older than dragons that has been waiting for Kira."
       ends_with: "A massive ancient creature rises from a lake of magma, looks at Kira's dragon mark, and says 'Little hatchling, we've been waiting for you.'"
+      
+    - scene: 4
+      title: "The Mother's Bargain"
+      file: "2026-02-04-the-mothers-bargain.md"
+      summary: "Pyreth, the mother of all dragons, offers Kira a choice: wake the twelve eggs and bond with all of them, or leave them sleeping forever. Varek's soldiers blast through the tunnels. With time running out, Kira climbs to the eggs and awakens all twelve, becoming their mother. The dragons hatch as soldiers attack. Pyreth holds them off, then sinks back into the earth, telling Kira the back tunnels lead out and the dragons will be able to fly in two days."
+      ends_with: "Kira, bonded to twelve hatchlings, begins walking through the back tunnels with Cael, fleeing toward the far side of the mountain range."
 
   next_scene_should:
-    - "Discover what the ancient guardian is and what it wants"
-    - "Learn the true nature of the eggs/dragons"
-    - "Develop Kira and Cael's dynamic (is he trustworthy? romantic potential?)"
-    - "What did Cael see in the palace that made him flee?"
-    - "Show Varek's forces closing in"
+    - "Flee through the back tunnels - two days until dragons can fly"
+    - "Develop Kira and Cael's relationship (forced proximity, shared danger)"
+    - "What did Cael see in the palace? Time to reveal his secret"
+    - "Show the hatchlings' personalities emerging"
+    - "Varek's pursuit intensifies - he knows about the hatching now"
+    - "Introduce the second prince (potential ally? rival? love interest?)"
 
   active_threads:
-    - "Kira is a wanted fugitive with a 500 gold bounty"
-    - "Prince Varek knows she's heading for the mountains and has soldiers waiting"
-    - "The ancient guardian in the volcanic chamber was expecting Kira"
-    - "Cael is hiding something - what did he see in the palace?"
-    - "The eggs are guarded by something older than dragons"
-    - "Two princes - Varek is a murderer, the other still unknown"
+    - "Kira is bonded to TWELVE dragons - unprecedented, world-changing"
+    - "Two-day journey through tunnels before dragons can fly"
+    - "Varek's soldiers witnessed the hatching - news will spread"
+    - "Cael still hiding his palace secret - what did he see?"
+    - "One hatchling climbed onto Cael - potential secondary bond?"
+    - "Pyreth is gone but prophecy/destiny element now confirmed"
+    - "The second prince is still unknown - potential ally?"
 
   world_state:
     - "Wanted posters label Kira as 'Commoner Murderer' who killed Sorrenvex"
-    - "Royal soldiers are searching the mountain passes"
-    - "Varek has troops stationed at the mining town, blocking the main route"
-    - "Kira has been on the run for 5 days"
+    - "Varek's soldiers WITNESSED the hatching - they will report back"
+    - "Twelve dragons have hatched for the first time in generations"
+    - "News of this will destabilize every noble house in Valdris"
+    - "Kira is now the most valuable/dangerous person in the kingdom"
 
 world:
   name: "Valdris"
