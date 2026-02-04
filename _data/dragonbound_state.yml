@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-02"
-  total_scenes: 2
+  last_updated: "2026-02-03"
+  total_scenes: 3
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Escaped the dragon pens, on a hillside outside the castle, marked wrist wrapped in torn sleeve. Has no money, no allies, no plan."
+    current_state: "Deep in the volcanic mountains, in a chamber with Cael. Has just encountered an ancient creature (older than dragons) that guards the eggs and was expecting her."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -44,7 +44,11 @@ characters:
     - name: "Marden"
       role: "Head keeper"
       details: "Saw the bonding. Was planning to sell Kira to the highest bidder. She escaped before he returned."
-      current_state: "Will discover she's gone. Will likely report to authorities or try to profit from the information."
+      current_state: "Presumably reported Kira or is profiting from information about her."
+    - name: "Cael"
+      role: "Fellow fugitive, potential ally"
+      details: "Former palace servant. Saw something he shouldn't have three weeks ago. Fleeing Prince Varek. Dark hair, eyes with golden glitter. Clothes once fine, now ruined. Has been mapping the mine tunnels."
+      current_state: "With Kira in the volcanic chamber, witnessing the ancient guardian."
 
   antagonists:
     - name: "Prince Varek"
@@ -53,8 +57,9 @@ characters:
       current_state: "Doesn't know about Kira yet, but will soon."
 
   potential_love_interests:
-    - "Prince Varek (enemy-to-lover potential? Or pure antagonist?)"
+    - "Cael (mysterious fellow fugitive, golden-glittered eyes, what's his real story?)"
     - "A second prince (not yet introduced)"
+    - "Prince Varek (enemy-to-lover? Or pure antagonist?)"
 
 plot:
   current_act: 1
@@ -71,25 +76,33 @@ plot:
       file: "2026-02-02-the-weight-of-centuries.md"
       summary: "Marden reveals his plan to sell Kira to the highest bidder. Kira realizes Prince Varek was involved in Aldric's murder (from Sorrenvex's memories). She tricks Marden, escapes through a hidden passage behind Sorrenvex's resting place, and emerges on a hillside outside the castle."
       ends_with: "Kira stands on a hillside outside the castle at night, marked wrist wrapped, no money or allies, but determined to find the hidden eggs."
+      
+    - scene: 3
+      title: "The Road to Ash"
+      file: "2026-02-03-the-road-to-ash.md"
+      summary: "Five days pass. Kira is hunted across the kingdom (wanted posters call her a murderer). She reaches a mountain pass but finds soldiers waiting at an abandoned mining town - Varek knows where she's heading. She meets Cael, a fellow fugitive who saw something in the palace. They enter the old mines together. In a volcanic chamber, they discover something ancient guarding the eggs - a creature older than dragons that has been waiting for Kira."
+      ends_with: "A massive ancient creature rises from a lake of magma, looks at Kira's dragon mark, and says 'Little hatchling, we've been waiting for you.'"
 
   next_scene_should:
-    - "Continue from the hillside - where does Kira go?"
-    - "Introduce new characters (the second prince? A helpful commoner?)"
-    - "Show Kira navigating the world as a fugitive"
-    - "Begin building toward romance subplot"
-    - "Show consequences of her escape (Marden discovering she's gone, word spreading)"
+    - "Discover what the ancient guardian is and what it wants"
+    - "Learn the true nature of the eggs/dragons"
+    - "Develop Kira and Cael's dynamic (is he trustworthy? romantic potential?)"
+    - "What did Cael see in the palace that made him flee?"
+    - "Show Varek's forces closing in"
 
   active_threads:
-    - "Kira is now a fugitive with an illegal bond"
-    - "Marden knows what happened and will act on it"
-    - "Prince Varek killed Lord Aldric and will want Kira dead if he learns what she knows"
-    - "Twelve dragon eggs hidden, only Kira knows where"
-    - "Two princes - one is a murderer, the other is unknown"
+    - "Kira is a wanted fugitive with a 500 gold bounty"
+    - "Prince Varek knows she's heading for the mountains and has soldiers waiting"
+    - "The ancient guardian in the volcanic chamber was expecting Kira"
+    - "Cael is hiding something - what did he see in the palace?"
+    - "The eggs are guarded by something older than dragons"
+    - "Two princes - Varek is a murderer, the other still unknown"
 
   world_state:
-    - "The death bell has tolled - Sorrenvex's death is known"
-    - "Kira has escaped the castle grounds"
-    - "No one knows about her bond yet except Marden"
+    - "Wanted posters label Kira as 'Commoner Murderer' who killed Sorrenvex"
+    - "Royal soldiers are searching the mountain passes"
+    - "Varek has troops stationed at the mining town, blocking the main route"
+    - "Kira has been on the run for 5 days"
 
 world:
   name: "Valdris"
@@ -119,3 +132,12 @@ narrative:
     - "Bonds that transcend class"
     - "Secrets and their consequences"
   pacing: "Building tension - Kira is alone and hunted"
+  
+  # STYLE RULES (from Rodion's feedback)
+  style:
+    - "ACTION over dialogue - show things happening, not people talking about them"
+    - "BIG time jumps - each chapter can skip hours, days, or weeks"
+    - "PLOT PROGRESSION - something significant must happen each chapter"
+    - "Minimize exposition dumps and lengthy conversations"
+    - "Adventure pace - think montages, journeys, discoveries"
+    - "2 chapters/day means each one needs to MOVE the story"
