@@ -3,6 +3,7 @@ layout: scene
 title: "The Weight of Centuries"
 date: 2026-02-02 15:00:00 -0500
 scene_number: 2
+image: /assets/images/scene-2-weight-of-centuries.png
 location: "The Deep Cavern / Servant's Quarters"
 characters:
   - Kira

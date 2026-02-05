@@ -3,6 +3,7 @@ layout: scene
 title: "The Mother's Bargain"
 date: 2026-02-04 15:00:00 -0500
 scene_number: 4
+image: /assets/images/scene-4-mothers-bargain.png
 location: "The Volcanic Chamber"
 characters:
   - Kira

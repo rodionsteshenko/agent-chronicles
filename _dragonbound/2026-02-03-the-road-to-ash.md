@@ -3,6 +3,7 @@ layout: scene
 title: "The Road to Ash"
 date: 2026-02-03 22:15:00 -0500
 scene_number: 3
+image: /assets/images/scene-3-road-to-ash.png
 location: "The Smoking Range"
 characters:
   - Kira
