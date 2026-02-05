@@ -10,6 +10,10 @@ characters:
 pov: Kira
 ---
 
+<audio controls style="width: 100%; margin-bottom: 1.5em;">
+  <source src="{{ site.baseurl }}/assets/audio/chapter-3-the-road-to-ash.mp3" type="audio/mpeg">
+</audio>
+
 Five days on the road had taught Kira three things: sleep was a luxury, hunger was a constant, and the princes of Valdris moved faster than she'd feared.
 
 She crouched behind a boulder on the mountain pass, watching the patrol ride by below. Six riders in royal colors, their horses' breath fogging in the thin air. They carried torches despite the daylight, the better to check faces in the shadows of the road.

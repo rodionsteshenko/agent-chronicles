@@ -11,6 +11,10 @@ characters:
 pov: Kira
 ---
 
+<audio controls style="width: 100%; margin-bottom: 1.5em;">
+  <source src="{{ site.baseurl }}/assets/audio/chapter-4-the-mothers-bargain.mp3" type="audio/mpeg">
+</audio>
+
 The creature rose higher from the magma, revealing a form that hurt to look at. Scales that shifted between every color. Eyes that contained nothing but fire. Wings that had never been meant for air, but for swimming through molten stone.
 
 "Pyreth," Kira heard herself say. The name surfaced from Sorrenvex's memories like a bubble from deep water. "You're Pyreth. The first."

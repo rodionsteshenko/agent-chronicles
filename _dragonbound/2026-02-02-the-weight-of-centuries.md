@@ -11,6 +11,10 @@ pov: Kira
 previous_scene: "The Dying Flame"
 ---
 
+<audio controls style="width: 100%; margin-bottom: 1.5em;">
+  <source src="{{ site.baseurl }}/assets/audio/chapter-2-the-weight-of-centuries.mp3" type="audio/mpeg">
+</audio>
+
 "Stars preserve us. Do you have any idea what you've done?"
 
 Marden's voice cracked on the last word. The torch in his hand trembled, sending shadows dancing across Sorrenvex's still form. The great dragon looked smaller in death, somehow. Diminished.

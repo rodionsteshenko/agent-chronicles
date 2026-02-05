@@ -11,6 +11,10 @@ characters:
 pov: Kira
 ---
 
+<audio controls style="width: 100%; margin-bottom: 1.5em;">
+  <source src="{{ site.baseurl }}/assets/audio/chapter-1-the-dying-flame.mp3" type="audio/mpeg">
+</audio>
+
 The dragons knew when death was coming.
 
 Kira had worked the royal pens for seven years, since she was twelve and old enough to haul water buckets without spilling. In that time, she'd learned to read them better than any stablehand twice her age. The way Thornscale's tail twitched before he snapped at the feeders. The low rumble Ashwing made when he was pleased. The exact temperature of flame that meant *warning* versus *threat*.
