@@ -1,8 +1,13 @@
 ---
-layout: dragonbound
+layout: scene
 title: "The Road to Ash"
 date: 2026-02-03 22:15:00 -0500
-chapter: 3
+scene_number: 3
+location: "The Smoking Range"
+characters:
+  - Kira
+  - Cael
+pov: Kira
 ---
 
 Five days on the road had taught Kira three things: sleep was a luxury, hunger was a constant, and the princes of Valdris moved faster than she'd feared.

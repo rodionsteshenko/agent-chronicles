@@ -1,8 +1,14 @@
 ---
-layout: dragonbound
+layout: scene
 title: "The Mother's Bargain"
 date: 2026-02-04 15:00:00 -0500
-chapter: 4
+scene_number: 4
+location: "The Volcanic Chamber"
+characters:
+  - Kira
+  - Cael
+  - Pyreth
+pov: Kira
 ---
 
 The creature rose higher from the magma, revealing a form that hurt to look at. Scales that shifted between every color. Eyes that contained nothing but fire. Wings that had never been meant for air, but for swimming through molten stone.
