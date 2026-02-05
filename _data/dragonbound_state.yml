@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-04"
-  total_scenes: 4
+  last_updated: "2026-02-05"
+  total_scenes: 5
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Newly bonded to TWELVE dragon hatchlings. Fleeing through the back tunnels of the Smoking Range with Cael. Has two days until the dragons are strong enough to fly. Varek's soldiers know her location."
+    current_state: "Bonded to twelve rapidly-growing hatchlings. Just met Prince Darian at the mountain exit. About to ride his dragon Castellan to escape. The hatchlings will be able to fly by tomorrow. Has formed an uneasy alliance with Varek's intended victim."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -56,13 +56,19 @@ characters:
   antagonists:
     - name: "Prince Varek"
       role: "Elder prince"
-      details: "Silver hair. Seen in Sorrenvex's memory WATCHING Lord Aldric die of poison. Implicated in the murder. Would kill Kira to protect this secret."
-      current_state: "Doesn't know about Kira yet, but will soon."
+      details: "Silver hair. Seen in Sorrenvex's memory WATCHING Lord Aldric die of poison. Implicated in the murder. Hired a blood mage to create bond-corrupting weapons."
+      current_state: "His soldiers witnessed the hatching and are pursuing. Will soon learn his brother has found Kira."
+
+  allies:
+    - name: "Prince Darian"
+      role: "Younger prince, Varek's intended victim"
+      details: "Mid-twenties, bronze armor. Bonded to Castellan, a bronze dragon. Has been trying to uncover what Varek is planning."
+      current_state: "Just encountered Kira at the mountain exit. Offered to help them escape. Motivations unclear - genuinely helpful or sees political opportunity?"
 
   potential_love_interests:
-    - "Cael (mysterious fellow fugitive, golden-glittered eyes, what's his real story?)"
-    - "A second prince (not yet introduced)"
-    - "Prince Varek (enemy-to-lover? Or pure antagonist?)"
+    - "Cael (fellow fugitive, golden-glittered eyes, now bonded to copper-gold hatchling)"
+    - "Prince Darian (younger prince, just met, handsome when not exhausted, unknown motives)"
+    - "Prince Varek (enemy-to-lover unlikely given he's trying to kill everyone)"
 
 plot:
   current_act: 1
@@ -91,30 +97,39 @@ plot:
       file: "2026-02-04-the-mothers-bargain.md"
       summary: "Pyreth, the mother of all dragons, offers Kira a choice: wake the twelve eggs and bond with all of them, or leave them sleeping forever. Varek's soldiers blast through the tunnels. With time running out, Kira climbs to the eggs and awakens all twelve, becoming their mother. The dragons hatch as soldiers attack. Pyreth holds them off, then sinks back into the earth, telling Kira the back tunnels lead out and the dragons will be able to fly in two days."
       ends_with: "Kira, bonded to twelve hatchlings, begins walking through the back tunnels with Cael, fleeing toward the far side of the mountain range."
+      
+    - scene: 5
+      title: "The Second Son"
+      file: "2026-02-05-the-second-son.md"
+      summary: "Thirty hours into the tunnels, the hatchlings begin hunting and growing rapidly. Cael reveals what he saw in the palace: Varek hired a blood mage to create a weapon that corrupts dragon bonds, planning to kill his brother Prince Darian. With soldiers blasting through behind them, they flee to the eastern exit and encounter Prince Darian himself, who has been trying to learn what Varek buried. Darian lowers his sword and offers to help them escape on his dragon Castellan."
+      ends_with: "Kira follows Prince Darian down the cliff path, her twelve hatchlings in tow, leaving the mountain behind and moving toward an uncertain alliance."
 
   next_scene_should:
-    - "Flee through the back tunnels - two days until dragons can fly"
-    - "Develop Kira and Cael's relationship (forced proximity, shared danger)"
-    - "What did Cael see in the palace? Time to reveal his secret"
-    - "Show the hatchlings' personalities emerging"
-    - "Varek's pursuit intensifies - he knows about the hatching now"
-    - "Introduce the second prince (potential ally? rival? love interest?)"
+    - "Escape on Castellan with Darian - where are they going?"
+    - "Hatchlings fly for the first time (it's been almost 2 days)"
+    - "Develop the Kira/Darian dynamic - is he trustworthy?"
+    - "The copper-gold hatchling and Cael's bond deepens"
+    - "Varek learns his brother has the dragonmother - his reaction"
+    - "What is Darian's plan? Does he want to use Kira too?"
 
   active_threads:
     - "Kira is bonded to TWELVE dragons - unprecedented, world-changing"
-    - "Two-day journey through tunnels before dragons can fly"
-    - "Varek's soldiers witnessed the hatching - news will spread"
-    - "Cael still hiding his palace secret - what did he see?"
-    - "One hatchling climbed onto Cael - potential secondary bond?"
-    - "Pyreth is gone but prophecy/destiny element now confirmed"
-    - "The second prince is still unknown - potential ally?"
+    - "Hatchlings are growing fast - will fly by tomorrow"
+    - "Cael revealed Varek's blood mage plot to corrupt dragon bonds"
+    - "The copper-gold hatchling has bonded to Cael (confirmed)"
+    - "Prince Darian has joined them - alliance or ulterior motive?"
+    - "Varek's soldiers are still pursuing - an hour behind"
+    - "Darian's dragon Castellan is waiting below the cliff"
+    - "Love triangle potential: Cael vs Darian?"
 
   world_state:
     - "Wanted posters label Kira as 'Commoner Murderer' who killed Sorrenvex"
-    - "Varek's soldiers WITNESSED the hatching - they will report back"
-    - "Twelve dragons have hatched for the first time in generations"
-    - "News of this will destabilize every noble house in Valdris"
-    - "Kira is now the most valuable/dangerous person in the kingdom"
+    - "Varek's soldiers witnessed the hatching and are reporting back"
+    - "Twelve dragons have hatched - unprecedented in generations"
+    - "Prince Darian now knows about Kira and has chosen to help (for now)"
+    - "Varek has a blood mage weapon that can corrupt dragon bonds"
+    - "Kira is the most valuable/dangerous person in the kingdom"
+    - "The brothers' conflict is about to become open war"
 
 world:
   name: "Valdris"
