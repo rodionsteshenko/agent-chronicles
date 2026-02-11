@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-05"
-  total_scenes: 5
+  last_updated: "2026-02-11"
+  total_scenes: 6
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Bonded to twelve rapidly-growing hatchlings. Just met Prince Darian at the mountain exit. About to ride his dragon Castellan to escape. The hatchlings will be able to fly by tomorrow. Has formed an uneasy alliance with Varek's intended victim."
+    current_state: "Escaped the mountain on Prince Darian's bronze dragon, Castellan. Reached a hidden watchtower refuge with Darian's allies. The twelve hatchlings have taken their first flight, making secrecy impossible. Cael's copper-gold hatchling remains tightly bonded to him."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -104,29 +104,36 @@ plot:
       summary: "Thirty hours into the tunnels, the hatchlings begin hunting and growing rapidly. Cael reveals what he saw in the palace: Varek hired a blood mage to create a weapon that corrupts dragon bonds, planning to kill his brother Prince Darian. With soldiers blasting through behind them, they flee to the eastern exit and encounter Prince Darian himself, who has been trying to learn what Varek buried. Darian lowers his sword and offers to help them escape on his dragon Castellan."
       ends_with: "Kira follows Prince Darian down the cliff path, her twelve hatchlings in tow, leaving the mountain behind and moving toward an uncertain alliance."
 
+    - scene: 6
+      title: "The First Flight"
+      file: "2026-02-11-the-first-flight.md"
+      summary: "Kira, Cael, and Darian descend the cliff under fire and escape on Castellan through the night. They reach a fog-hidden watchtower refuge staffed by Darian's rough allies. By midmorning the hatchlings surge into the open sky and take their first flight, ending any hope of remaining hidden."
+      ends_with: "Twelve new shadows circle above the valley, and Kira feels the distant tightening of consequences: Varek will come."
+
   next_scene_should:
-    - "Escape on Castellan with Darian - where are they going?"
-    - "Hatchlings fly for the first time (it's been almost 2 days)"
-    - "Develop the Kira/Darian dynamic - is he trustworthy?"
-    - "The copper-gold hatchling and Cael's bond deepens"
-    - "Varek learns his brother has the dragonmother - his reaction"
-    - "What is Darian's plan? Does he want to use Kira too?"
+    - "Varek learns Darian has the dragonmother and responds (move from pursuit to politics/war)"
+    - "Define Darian's plan for Kira and the hatchlings (safe haven, allies, leverage)"
+    - "Hatchlings' first true hunt in open country, and the problems that creates"
+    - "Deepen Kira/Darian trust or betrayal cues"
+    - "Cael's bond with the copper-gold hatchling evolves (what does it grant him?)"
+    - "First appearance or effect of the bond-corrupting weapon"
 
   active_threads:
     - "Kira is bonded to TWELVE dragons - unprecedented, world-changing"
-    - "Hatchlings are growing fast - will fly by tomorrow"
+    - "The hatchlings can now fly (clumsily) and are growing at an unnatural pace"
     - "Cael revealed Varek's blood mage plot to corrupt dragon bonds"
     - "The copper-gold hatchling has bonded to Cael (confirmed)"
-    - "Prince Darian has joined them - alliance or ulterior motive?"
-    - "Varek's soldiers are still pursuing - an hour behind"
-    - "Darian's dragon Castellan is waiting below the cliff"
+    - "Prince Darian has taken Kira to a hidden refuge; alliance or leverage?"
+    - "Varek will learn Darian has Kira and escalate"
+    - "Castellan is Darian's only reliable military edge right now"
     - "Love triangle potential: Cael vs Darian?"
 
   world_state:
     - "Wanted posters label Kira as 'Commoner Murderer' who killed Sorrenvex"
     - "Varek's soldiers witnessed the hatching and are reporting back"
     - "Twelve dragons have hatched - unprecedented in generations"
-    - "Prince Darian now knows about Kira and has chosen to help (for now)"
+    - "Kira escaped the mountains with Prince Darian and reached a hidden foothills refuge"
+    - "The hatchlings have begun flying, making sightings likely"
     - "Varek has a blood mage weapon that can corrupt dragon bonds"
     - "Kira is the most valuable/dangerous person in the kingdom"
     - "The brothers' conflict is about to become open war"
