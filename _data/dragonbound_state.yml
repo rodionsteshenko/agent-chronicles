@@ -8,7 +8,7 @@ meta:
   status: "in_progress"
   started: "2026-02-01"
   last_updated: "2026-02-12"
-  total_scenes: 7
+  total_scenes: 8
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Darian's fog-valley refuge was compromised once the hatchlings took to the sky. On the march east, the hatchlings made their first open-country hunt and were caught in an ambush: a blood-mage net briefly twisted Tempest's bond, and a grey, smoke-like vial weapon was released toward the hatchlings."
+    current_state: "After the ambush in the eastern scrub, a grey smoke weapon infected one hatchling's bond; Kira and Cael barely countered it with fire while Castellan held the smoke at bay. Days later they found an ancient ring of standing stones that could draw the grey residue out, hinting at older magics that can cleanse bond-corruption."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -116,13 +116,20 @@ plot:
       summary: "With the refuge exposed, Darian evacuates into the eastern scrub. The hatchlings conduct their first coordinated hunt, but Varek's hired hunters spring a blood-magic net that briefly corrupts Tempest's bond. Castellan breaks the ambush as Cael helps bring down the blood mage, who releases a grey smoke weapon aimed at infecting the bonds."
       ends_with: "The blood mage smashes a vial, and grey smoke races uphill toward the hatchlings like a plague meant for bonds."
 
+    - scene: 8
+      title: "Ashbind"
+      file: "2026-02-12-ashbind.md"
+      summary: "The grey smoke weapon latches onto the shy green hatchling's bond. Kira burns it back with her stolen fire while Cael and the copper-gold hatchling crack it with pale flame; Castellan draws a scorched line that holds the smoke. They flee for days as the kingdom stirs, then discover an ancient ring of standing stones that can draw the residue out and cleanse the bond."
+      ends_with: "Kira realizes the weapon is only the first, and that the hatchlings are no longer just fugitives, they are proof that will demand an answer."
+
   next_scene_should:
     - "Varek learns Darian has the dragonmother and responds (move from pursuit to politics/war)"
     - "Define Darian's plan for Kira and the hatchlings (safe haven, allies, leverage)"
     - "Hatchlings' first true hunt in open country, and the problems that creates"
     - "Deepen Kira/Darian trust or betrayal cues"
     - "Cael's bond with the copper-gold hatchling evolves (what does it grant him?)"
-    - "First appearance or effect of the bond-corrupting weapon"
+    - "Escalate the war: Varek moves from covert hunters to open politics and armies"
+    - "Explain what the standing stones are and who else knows about them"
 
   active_threads:
     - "Kira is bonded to TWELVE dragons - unprecedented, world-changing"
