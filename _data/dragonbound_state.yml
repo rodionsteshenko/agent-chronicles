@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-12"
-  total_scenes: 8
+  last_updated: "2026-02-13"
+  total_scenes: 9
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "After the ambush in the eastern scrub, a grey smoke weapon infected one hatchling's bond; Kira and Cael barely countered it with fire while Castellan held the smoke at bay. Days later they found an ancient ring of standing stones that could draw the grey residue out, hinting at older magics that can cleanse bond-corruption."
+    current_state: "At Thornwatch Keep with Darian's forces. The old king is dead and Varek has taken the throne. Kira took her first flight on Tempest; the hatchlings have grown to warhorse size. An army of 500 camps below the keep. Darian has revealed a plan to reach the Sanctum of Echoes in the Ashlands to extract Sorrenvex's memory as proof of Varek's crime. House Morrow has arrived for parley."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -122,34 +122,41 @@ plot:
       summary: "The grey smoke weapon latches onto the shy green hatchling's bond. Kira burns it back with her stolen fire while Cael and the copper-gold hatchling crack it with pale flame; Castellan draws a scorched line that holds the smoke. They flee for days as the kingdom stirs, then discover an ancient ring of standing stones that can draw the residue out and cleanse the bond."
       ends_with: "Kira realizes the weapon is only the first, and that the hatchlings are no longer just fugitives, they are proof that will demand an answer."
 
+    - scene: 9
+      title: "The King's Decree"
+      file: "2026-02-13-the-kings-decree.md"
+      summary: "War bells announce the old king's death; Varek takes the throne. At Thornwatch Keep, Kira takes her first flight on Tempest while an army camps below. The hatchlings have grown to warhorse size. Darian reveals a plan: cross the Ashlands to reach the Sanctum of Echoes, where they can extract Sorrenvex's memory of Varek's murder and prove his crime. House Morrow, Darian's mother's neutral house, arrives under a parley flag."
+      ends_with: "The war had found them. Now they would decide how to fight it."
+
   next_scene_should:
-    - "Varek learns Darian has the dragonmother and responds (move from pursuit to politics/war)"
-    - "Define Darian's plan for Kira and the hatchlings (safe haven, allies, leverage)"
-    - "Hatchlings' first true hunt in open country, and the problems that creates"
-    - "Deepen Kira/Darian trust or betrayal cues"
-    - "Cael's bond with the copper-gold hatchling evolves (what does it grant him?)"
-    - "Escalate the war: Varek moves from covert hunters to open politics and armies"
-    - "Explain what the standing stones are and who else knows about them"
+    - "House Morrow parley - what do they want and what will they offer?"
+    - "Decision to cross the Ashlands toward the Sanctum of Echoes"
+    - "Varek's coronation and his first decrees (outlaw Darian, bounty on Kira)"
+    - "The journey into the Ashlands begins - what horrors await?"
+    - "Cael's bond with Ember continues to evolve (he can see wind now)"
+    - "Kira/Darian dynamic deepens - trust, attraction, or political calculation?"
+    - "More about the Sanctum of Echoes and the old dragonbonders"
 
   active_threads:
-    - "Kira is bonded to TWELVE dragons - unprecedented, world-changing"
-    - "The hatchlings can now fly (clumsily) and are growing at an unnatural pace"
-    - "Cael revealed Varek's blood mage plot to corrupt dragon bonds"
-    - "The copper-gold hatchling has bonded to Cael (confirmed)"
-    - "Prince Darian has taken Kira to a hidden refuge; alliance or leverage?"
-    - "Varek will learn Darian has Kira and escalate"
-    - "Castellan is Darian's only reliable military edge right now"
-    - "Love triangle potential: Cael vs Darian?"
+    - "Kira is bonded to TWELVE dragons - now warhorse-sized and flight-capable"
+    - "Kira took her first flight on Tempest - she is now a true dragonrider"
+    - "Cael's bond with Ember has deepened - he can see wind; what else will come?"
+    - "Varek is now KING - the brothers' war becomes civil war"
+    - "House Morrow parley - potential allies or just opportunists?"
+    - "The Sanctum of Echoes quest - cross the Ashlands to extract proof of murder"
+    - "Darian showed vulnerability - the bronze prince mask is slipping"
+    - "Love triangle building: Cael (fellow fugitive, bonded, loyal) vs Darian (prince, strategic, attractive)"
 
   world_state:
+    - "The old king is dead; Varek has taken the throne"
     - "Wanted posters label Kira as 'Commoner Murderer' who killed Sorrenvex"
-    - "Varek's soldiers witnessed the hatching and are reporting back"
-    - "Twelve dragons have hatched - unprecedented in generations"
-    - "Kira escaped the mountains with Prince Darian and reached a hidden foothills refuge"
-    - "The hatchlings have begun flying, making sightings likely"
-    - "Varek has a blood mage weapon that can corrupt dragon bonds"
-    - "Kira is the most valuable/dangerous person in the kingdom"
-    - "The brothers' conflict is about to become open war"
+    - "Darian will likely be declared traitor within days"
+    - "Twelve dragons have grown to warhorse size and can fly well"
+    - "Kira and Darian are at Thornwatch Keep with 500 soldiers besieging below"
+    - "Varek has blood mage weapons that corrupt dragon bonds"
+    - "Standing stones can cleanse bond corruption - old magic predates the noble bloodlines"
+    - "House Morrow (Darian's mother's house) has arrived for parley - neutral no longer"
+    - "The Sanctum of Echoes in the Ashlands may hold the key to proving Varek's murder of Lord Aldric"
 
 world:
   name: "Valdris"
