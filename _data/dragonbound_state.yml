@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-13"
-  total_scenes: 10
+  last_updated: "2026-02-14"
+  total_scenes: 11
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Inside the Sanctum of Echoes after crossing the Ashlands. Has survived weeks of ashwraith attacks. Her hatchlings are battle-hardened. Shared an intimate moment with Darian. Ready to attempt the memory extraction ritual. House Morrow will declare for them if they find proof."
+    current_state: "Has completed the memory extraction ritual in the Sanctum of Echoes. Now possesses the Keeper's testimony and ability to project Sorrenvex's memories as dragonfire. Learned the truth: noble bonds are artificial copies of the original commoner bonds. Varek's army waits at the edge of the Ashlands. Ready to emerge and fight."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -49,9 +49,13 @@ characters:
       details: "Saw the bonding. Was planning to sell Kira to the highest bidder. She escaped before he returned."
       current_state: "Presumably reported Kira or is profiting from information about her."
     - name: "Cael"
-      role: "Fellow fugitive, potential ally"
-      details: "Former palace servant. Saw something he shouldn't have three weeks ago. Fleeing Prince Varek. Dark hair, eyes with golden glitter. Clothes once fine, now ruined. Has been mapping the mine tunnels."
-      current_state: "With Kira in the volcanic chamber, witnessing the ancient guardian."
+      role: "Fellow fugitive, bonded to Ember"
+      details: "Former palace servant. Saw Varek's blood mage dealings. Dark hair, eyes with golden glitter. Now bonded to Ember, the copper-gold hatchling."
+      current_state: "With Kira and Darian, ready to emerge from the Sanctum. His bond with Ember allows pure flame."
+    - name: "The Keeper of Echoes"
+      role: "Ancient guardian of the Sanctum"
+      details: "Impossibly old woman, blind white eyes that still see. Last survivor of the original Sanctum order. Knows all dragons that ever lived. Possesses knowledge of the true nature of dragon bonds."
+      current_state: "Remains in the Sanctum. Has provided testimony and taught Kira to project memories through dragonfire."
 
   antagonists:
     - name: "Prince Varek"
@@ -134,36 +138,42 @@ plot:
       summary: "Lady Morrow offers conditional support: supplies, horses, and escort to the Ashland border, declaring openly only if they find proof of Varek's murder. The party rides east for four days until the land dies and ash falls from the sky. In the Ashlands, ashwraiths attack nightly, drawn to dragon fire. Ember's pure flame destroys them permanently. After a week of battles, Tempest kills a wraith queen. Darian and Kira share a moment of connection. They reach the Sanctum of Echoes, an impossible ancient cathedral rising from the dead land."
       ends_with: "Kira stepped through the gates. The Sanctum swallowed her whole."
 
+    - scene: 11
+      title: "The Sanctum of Echoes"
+      file: "2026-02-14-the-sanctum-of-echoes.md"
+      summary: "The Sanctum lights up for Kira's dragonmark. She meets the ancient Keeper of Echoes, the last survivor of the old order. Kira descends alone to the Mirror of Binding and relives Sorrenvex's memory of Varek poisoning Lord Aldric. More importantly, she learns the truth: noble bonds are artificial constructs created by blood magic. The original dragonbonders were commoners. The Keeper teaches Kira to project memories through dragonfire and provides sealed testimony. Three days pass. Varek's army arrives at the Ashland's edge but won't enter. Kira is ready to emerge with proof that will shake the kingdom."
+      ends_with: "The Sanctum had given her truth. Now it was time to share it."
+
   next_scene_should:
-    - "Inside the Sanctum of Echoes - what ancient powers dwell within?"
-    - "Extracting Sorrenvex's memory - the ritual and its costs"
-    - "Revelations about the first dragonbonders and how bonds truly work"
-    - "Kira learns something that changes everything about her bond"
-    - "Varek's forces close in - pursuit reaches the Ashlands"
-    - "Cael and Ember's bond deepens further - what powers emerge?"
-    - "The love triangle sharpens - Kira must choose who she trusts"
-    - "The truth about why commoner bonds are illegal"
+    - "Emerging from the Sanctum to face Varek's army at the Ashland border"
+    - "First confrontation: dragons vs dragons, proof vs power"
+    - "House Morrow must choose - do they declare when the moment comes?"
+    - "Darian faces his brother publicly for the first time"
+    - "The revelation about commoner bonds spreads - how do nobles react?"
+    - "Kira projects the murder memory for witnesses to see"
+    - "The love triangle comes to a head under pressure of battle"
+    - "Common people begin to understand what Kira represents"
 
   active_threads:
-    - "Kira has entered the Sanctum of Echoes - ancient dragonbonder stronghold"
-    - "The hatchlings have survived weeks of ashwraith battles and grown harder"
-    - "Cael and Ember's bond allows Ember to burn with pure flame"
-    - "Darian and Kira shared an intimate moment - attraction is building"
-    - "House Morrow will declare for them IF they find proof"
-    - "Memory extraction ritual awaits - what will it cost?"
-    - "The Ashlands are dangerous but now behind them"
-    - "Love triangle sharpening: Cael (loyal, gentle connection) vs Darian (political, intense chemistry)"
+    - "Kira has proof: the Keeper's testimony and ability to project Sorrenvex's memories"
+    - "The truth about noble bonds being artificial is now known to Kira, Darian, and Cael"
+    - "Varek's army camps at the Ashland border, three dragons strong"
+    - "Darian has committed to revealing everything, even though it undermines his own family"
+    - "House Morrow will declare for them IF they find proof - proof is now secured"
+    - "The hatchlings are battle-hardened from weeks of ashwraith combat"
+    - "Love triangle: Cael grounds her, Darian excites her - decision approaches"
+    - "Civil war is inevitable once the truth spreads"
 
   world_state:
-    - "Varek is King; Darian is likely declared traitor by now"
-    - "House Morrow offers conditional support - proof required"
-    - "The party has crossed the Ashlands after weeks of ashwraith battles"
-    - "The hatchlings are battle-hardened, leaner, and their flames burn hotter"
-    - "Ashwraiths are drawn to dragon fire; Ember's pure flame destroys them permanently"
-    - "Tempest killed a wraith queen, destroying a thousand wraiths with her"
-    - "Kira and party now stand inside the Sanctum of Echoes"
-    - "The Sanctum is an impossibly preserved ancient cathedral where memory and magic intertwine"
-    - "Sorrenvex fought similar creatures; his memories guide Kira"
+    - "Varek is King; Darian is declared traitor"
+    - "House Morrow awaits proof to declare openly - proof is now secured"
+    - "Kira can project Sorrenvex's memory of the murder as dragonfire"
+    - "The Keeper of Echoes has provided sealed testimony"
+    - "The truth: noble bonds are artificial blood magic; original bonders were commoners"
+    - "Varek's army (thousands of soldiers, three dragons) waits at Ashland border"
+    - "The hatchlings are battle-hardened and can copy Ember's pure flame"
+    - "Kira has spent three days in the Sanctum learning memory projection"
+    - "The party is about to emerge and face Varek's forces directly"
 
 world:
   name: "Valdris"
