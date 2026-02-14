@@ -8,7 +8,7 @@ meta:
   status: "in_progress"
   started: "2026-02-01"
   last_updated: "2026-02-14"
-  total_scenes: 11
+  total_scenes: 12
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Has completed the memory extraction ritual in the Sanctum of Echoes. Now possesses the Keeper's testimony and ability to project Sorrenvex's memories as dragonfire. Learned the truth: noble bonds are artificial copies of the original commoner bonds. Varek's army waits at the edge of the Ashlands. Ready to emerge and fight."
+    current_state: "Won the first confrontation at the Ashland border. Projected the murder memory for thousands of witnesses. Army fractured - Lord Ashford defected, House Morrow declared. Varek retreated to the capital with ~2000 loyalists. Now preparing to march on the capital with growing coalition."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -144,36 +144,42 @@ plot:
       summary: "The Sanctum lights up for Kira's dragonmark. She meets the ancient Keeper of Echoes, the last survivor of the old order. Kira descends alone to the Mirror of Binding and relives Sorrenvex's memory of Varek poisoning Lord Aldric. More importantly, she learns the truth: noble bonds are artificial constructs created by blood magic. The original dragonbonders were commoners. The Keeper teaches Kira to project memories through dragonfire and provides sealed testimony. Three days pass. Varek's army arrives at the Ashland's edge but won't enter. Kira is ready to emerge with proof that will shake the kingdom."
       ends_with: "The Sanctum had given her truth. Now it was time to share it."
 
+    - scene: 12
+      title: "The Line of Fire"
+      file: "2026-02-14-the-line-of-fire.md"
+      summary: "Kira emerges from the Ashlands and confronts Varek's army directly. She projects Sorrenvex's murder memory in dragonfire for five thousand witnesses. The army fractures as soldiers see their king's crime. Lord Ashford defects. House Morrow declares and charges in. A brief dragon battle ends with Varek retreating to the capital with reduced forces, promising to burn commoner villages. Kira wins the first confrontation but the war is just beginning."
+      ends_with: "Commoners look up at Kira on Tempest and see one of their own for the first time in Valdris history."
+
   next_scene_should:
-    - "Emerging from the Sanctum to face Varek's army at the Ashland border"
-    - "First confrontation: dragons vs dragons, proof vs power"
-    - "House Morrow must choose - do they declare when the moment comes?"
-    - "Darian faces his brother publicly for the first time"
-    - "The revelation about commoner bonds spreads - how do nobles react?"
-    - "Kira projects the murder memory for witnesses to see"
-    - "The love triangle comes to a head under pressure of battle"
-    - "Common people begin to understand what Kira represents"
+    - "March toward the capital - gathering commoner support along the way"
+    - "Varek's scorched earth campaign: burning villages to deny Kira allies"
+    - "The commoner bond truth spreads - farmers seeking dragons in the mountains"
+    - "More noble houses must choose sides as civil war erupts"
+    - "Kira and Darian's relationship deepens under pressure of campaign"
+    - "Cael's role evolves - he's becoming something new, not just a fugitive"
+    - "Blood mages attempt something desperate to counter Kira's growing power"
+    - "The love triangle resolves as the march to the capital intensifies"
 
   active_threads:
-    - "Kira has proof: the Keeper's testimony and ability to project Sorrenvex's memories"
-    - "The truth about noble bonds being artificial is now known to Kira, Darian, and Cael"
-    - "Varek's army camps at the Ashland border, three dragons strong"
-    - "Darian has committed to revealing everything, even though it undermines his own family"
-    - "House Morrow will declare for them IF they find proof - proof is now secured"
-    - "The hatchlings are battle-hardened from weeks of ashwraith combat"
-    - "Love triangle: Cael grounds her, Darian excites her - decision approaches"
-    - "Civil war is inevitable once the truth spreads"
+    - "Varek retreated to the capital with ~2000 soldiers, 2 dragons (Cassian's red wounded, Vellant's silver)"
+    - "Lord Ashford defected openly - his dark blue dragon is now neutral/allied"
+    - "House Morrow declared and is actively supporting Kira's coalition"
+    - "The murder proof has been seen by thousands - word will spread fast"
+    - "Varek threatened to burn commoner villages on the march to the capital"
+    - "The commoner bond truth hasn't been publicly revealed yet - Lady Morrow warned it will 'burn hotter than dragonfire'"
+    - "Love triangle: Cael was first to reach Kira after battle, Darian fought alongside her"
+    - "Civil war is now active - the kingdom is splitting"
 
   world_state:
-    - "Varek is King; Darian is declared traitor"
-    - "House Morrow awaits proof to declare openly - proof is now secured"
-    - "Kira can project Sorrenvex's memory of the murder as dragonfire"
-    - "The Keeper of Echoes has provided sealed testimony"
-    - "The truth: noble bonds are artificial blood magic; original bonders were commoners"
-    - "Varek's army (thousands of soldiers, three dragons) waits at Ashland border"
-    - "The hatchlings are battle-hardened and can copy Ember's pure flame"
-    - "Kira has spent three days in the Sanctum learning memory projection"
-    - "The party is about to emerge and face Varek's forces directly"
+    - "Varek is King but his legitimacy is shattered - thousands saw the murder proof"
+    - "House Morrow has declared for Kira/Darian's coalition"
+    - "Lord Ashford defected from Varek; Lords Cassian and Vellant remain loyal"
+    - "Kira demonstrated memory projection publicly - the proof is undeniable"
+    - "The commoner bond truth is known to Kira's inner circle but not yet public"
+    - "Varek retreating to the capital (~100k population) with ~2000 soldiers and 2 dragons"
+    - "Kira's coalition: 12 dragons, Castellan, House Morrow forces, surrendered soldiers"
+    - "Ember's pure flame can disrupt artificial noble bonds"
+    - "Commoners witnessed a dragonrider who is one of them for the first time"
 
 world:
   name: "Valdris"
