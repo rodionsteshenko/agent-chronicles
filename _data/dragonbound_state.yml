@@ -8,7 +8,7 @@ meta:
   status: "in_progress"
   started: "2026-02-01"
   last_updated: "2026-02-15"
-  total_scenes: 13
+  total_scenes: 14
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Marched on the capital for eleven days, passing through seven burned villages (Varek's scorched earth). Coalition grew to 4000+ with commoner volunteers. Kissed Cael. Now camped outside Thornwall, the capital city. Plans to infiltrate through servant passages she knows from her years as a stablehand, to spread the commoner bond truth inside the walls."
+    current_state: "Successfully infiltrated Thornwall through the sewers with Cael. Discovered Varek's blood mages have created an abomination: a dragon named Solace, stripped of her bond and filled with blood magic (black scales, white empty eyes). Distributed the commoner bond truth throughout the castle via servant networks. Reunited with Marden, who revealed he always knew commoners were the original bonders. Was discovered and escaped through the river, rescued by the hatchlings. The servants inside are now spreading the truth - revolution from within has begun."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -156,35 +156,42 @@ plot:
       summary: "Eleven-day march toward the capital. Varek burns seven villages in scorched earth campaign, but refugees join the coalition instead of scattering. Commoner volunteers swell the army to 4000+. Cael and Kira kiss. The coalition reaches Thornwall, the fortified capital. Kira reveals her plan: infiltrate through servant passages she knows from her years as a stablehand to spread the commoner bond truth inside."
       ends_with: "Kira announces she's going into the capital alone through the servant passages she knows, to spread the truth about commoner bonds before the siege."
 
+    - scene: 14
+      title: "The Servant's War"
+      file: "2026-02-15-the-servants-war.md"
+      summary: "Kira and Cael infiltrate Thornwall through the sewers. In the dragon pens, Kira discovers Varek's ultimate weapon: Solace, a young dragon stripped of her bond by blood magic, now a hollow weapon with black scales and white eyes. Kira pushes Sorrenvex's memories through the stone to reach the chained dragons. She confronts Marden, who reveals he always knew commoners were the original bonders. Marden agrees to distribute the truth through the servant network. Letters planted throughout the castle. Discovered before dawn, Kira and Cael escape through the river, rescued by the hatchlings. Inside Thornwall, the servants begin their uprising."
+      ends_with: "Voices rise from hundreds of windows as servants who read the letters choose to stop being invisible. The servant's war has begun."
+
   next_scene_should:
-    - "Kira infiltrates Thornwall through servant passages - stealth mission inside the capital"
-    - "She encounters people she knew from her stablehand days - old colleagues, maybe Marden"
-    - "Spreading the commoner bond truth inside the walls - revolution from within"
-    - "Blood mages have fortified the castle - new threats inside"
-    - "Varek's desperation: what does a cornered king do?"
-    - "Darian's reaction to Kira choosing Cael - does it affect the alliance?"
-    - "The siege begins or is averted by internal uprising"
+    - "The servant uprising spreads through Thornwall - gates opened from within?"
+    - "Varek unleashes Solace, the hollow dragon, as his ultimate weapon"
+    - "Kira must find a way to restore Solace's bond - can a broken dragon be healed?"
+    - "The final confrontation: coalition storms the capital as it tears itself apart from within"
+    - "Darian's role in the endgame - does he claim the throne or renounce it?"
+    - "Marden's redemption arc - does he survive?"
+    - "The commoner bond truth reshapes Valdris forever"
 
   active_threads:
-    - "Kira plans to infiltrate Thornwall alone through servant passages"
-    - "Varek has 2000 soldiers, 2 dragons, blood mages, and a fortified capital"
+    - "Servant uprising underway inside Thornwall - truth spreading through the castle"
+    - "Solace, the hollow dragon (black scales, white eyes) - Varek's blood-magic weapon"
+    - "Marden distributing truth through keeper network - his redemption"
+    - "Varek has 2000 soldiers, 2 dragons + Solace, blood mages, fortified capital"
     - "Coalition has 4000+ troops, 13 dragons, camped outside Thornwall"
-    - "Kira and Cael kissed - the love triangle has resolved toward Cael"
-    - "Darian doesn't know yet - potential tension"
-    - "The commoner bond truth is about to be unleashed inside the capital"
-    - "Varek burned seven villages - refugees joined the coalition"
-    - "Sorrel gave Kira seeds - symbolic of what comes after the war"
-    - "Lady Morrow warned the bond truth will cost noble allies"
+    - "Kira and Cael together - Darian's feelings unresolved"
+    - "Red and silver dragons in the pens stirred when Kira pushed memories through stone"
+    - "Sorrel's seeds - symbolic of what comes after"
+    - "The war is entering its final phase"
 
   world_state:
-    - "Varek holds Thornwall (capital, 100k population) with 2000 soldiers, 2 dragons, blood mages"
+    - "Varek holds Thornwall with 2000 soldiers, 2 noble dragons + Solace (blood-magic hollow dragon)"
     - "Walls fortified with blood-magic ballistae, trenches, river chains"
     - "Kira's coalition: 4000+ troops, 13 dragons, House Morrow, Lord Ashford, commoner volunteers"
-    - "Seven villages burned in Varek's scorched earth - refugees joined coalition"
-    - "Murder proof widely known - Varek's legitimacy shattered"
-    - "Commoner bond truth still secret outside Kira's inner circle"
-    - "Kira about to infiltrate the capital through servant passages"
+    - "Commoner bond truth NOW spreading inside Thornwall via servant networks"
+    - "Servant uprising beginning - hundreds of voices rising"
+    - "Marden has turned, distributing truth through keeper network"
+    - "Red and silver dragons in pens exposed to Kira's memory projection"
     - "Kira and Cael are together; Darian's feelings unresolved"
+    - "Story approaching climax - final confrontation imminent"
 
 world:
   name: "Valdris"
