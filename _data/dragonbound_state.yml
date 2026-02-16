@@ -7,8 +7,8 @@ meta:
   title: "Dragonbound"
   status: "in_progress"
   started: "2026-02-01"
-  last_updated: "2026-02-15"
-  total_scenes: 14
+  last_updated: "2026-02-16"
+  total_scenes: 15
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Successfully infiltrated Thornwall through the sewers with Cael. Discovered Varek's blood mages have created an abomination: a dragon named Solace, stripped of her bond and filled with blood magic (black scales, white empty eyes). Distributed the commoner bond truth throughout the castle via servant networks. Reunited with Marden, who revealed he always knew commoners were the original bonders. Was discovered and escaped through the river, rescued by the hatchlings. The servants inside are now spreading the truth - revolution from within has begun."
+    current_state: "Led the coalition's assault on Thornwall. Servants opened the gates from within after a two-day uprising. Confronted Solace, the hollow dragon, in the plaza. Rammed Solace with Tempest to jar the blood mage loose. Cael and Ember used pure flame to burn the blood magic from Solace's bond channel, restoring her. Solace knelt before Kira. Varek fled into the castle; Darian pursued him. The city has fallen to the coalition. Only Varek's capture remains."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -162,36 +162,40 @@ plot:
       summary: "Kira and Cael infiltrate Thornwall through the sewers. In the dragon pens, Kira discovers Varek's ultimate weapon: Solace, a young dragon stripped of her bond by blood magic, now a hollow weapon with black scales and white eyes. Kira pushes Sorrenvex's memories through the stone to reach the chained dragons. She confronts Marden, who reveals he always knew commoners were the original bonders. Marden agrees to distribute the truth through the servant network. Letters planted throughout the castle. Discovered before dawn, Kira and Cael escape through the river, rescued by the hatchlings. Inside Thornwall, the servants begin their uprising."
       ends_with: "Voices rise from hundreds of windows as servants who read the letters choose to stop being invisible. The servant's war has begun."
 
+    - scene: 15
+      title: "The Gates of Dawn"
+      file: "2026-02-16-the-gates-of-dawn.md"
+      summary: "The servant uprising paralyzes Thornwall for two days. Servants open the southern gate. Darian leads cavalry through. The coalition takes the outer city. Varek unleashes Solace, the hollow dragon, whose corrupted fire dissolves stone and men. Kira rams Solace with Tempest to jar the blood mage loose. Cael leaps onto Solace's back, knocks the mage free, and Ember pours pure flame into the bond channel. The blood magic shatters. Solace's scales turn from black to green. She kneels before Kira. Varek flees into the castle; Darian pursues on Castellan."
+      ends_with: "Kira stands with her hand on Solace's scales as the sun rises over a city that has just changed hands. Varek has fled; Darian is in pursuit."
+
   next_scene_should:
-    - "The servant uprising spreads through Thornwall - gates opened from within?"
-    - "Varek unleashes Solace, the hollow dragon, as his ultimate weapon"
-    - "Kira must find a way to restore Solace's bond - can a broken dragon be healed?"
-    - "The final confrontation: coalition storms the capital as it tears itself apart from within"
-    - "Darian's role in the endgame - does he claim the throne or renounce it?"
-    - "Marden's redemption arc - does he survive?"
-    - "The commoner bond truth reshapes Valdris forever"
+    - "Darian's pursuit of Varek through the castle - the final confrontation between brothers"
+    - "Varek's last stand - does he have one more blood-magic weapon?"
+    - "What happens to the throne? Darian claims it, renounces it, or something else?"
+    - "Marden's fate - did he survive the uprising?"
+    - "Solace's recovery - she's free but traumatized"
+    - "Kira and Cael's future - the war is ending, what comes next?"
+    - "The commoner bond truth reshapes Valdris forever - epilogue material"
+    - "Story is 1-2 chapters from ending"
 
   active_threads:
-    - "Servant uprising underway inside Thornwall - truth spreading through the castle"
-    - "Solace, the hollow dragon (black scales, white eyes) - Varek's blood-magic weapon"
-    - "Marden distributing truth through keeper network - his redemption"
-    - "Varek has 2000 soldiers, 2 dragons + Solace, blood mages, fortified capital"
-    - "Coalition has 4000+ troops, 13 dragons, camped outside Thornwall"
-    - "Kira and Cael together - Darian's feelings unresolved"
-    - "Red and silver dragons in the pens stirred when Kira pushed memories through stone"
+    - "Darian pursuing Varek into the castle on Castellan - outcome unknown"
+    - "Solace healed but traumatized, kneeling before Kira"
+    - "Coalition holds the city, Varek's soldiers surrendering"
+    - "Marden's fate unknown - last seen leading servants out"
+    - "Red and silver dragons in the pens - still chained?"
+    - "Kira and Cael together; Darian's feelings unresolved"
     - "Sorrel's seeds - symbolic of what comes after"
-    - "The war is entering its final phase"
+    - "The war is nearly over - denouement approaching"
 
   world_state:
-    - "Varek holds Thornwall with 2000 soldiers, 2 noble dragons + Solace (blood-magic hollow dragon)"
-    - "Walls fortified with blood-magic ballistae, trenches, river chains"
-    - "Kira's coalition: 4000+ troops, 13 dragons, House Morrow, Lord Ashford, commoner volunteers"
-    - "Commoner bond truth NOW spreading inside Thornwall via servant networks"
-    - "Servant uprising beginning - hundreds of voices rising"
-    - "Marden has turned, distributing truth through keeper network"
-    - "Red and silver dragons in pens exposed to Kira's memory projection"
-    - "Kira and Cael are together; Darian's feelings unresolved"
-    - "Story approaching climax - final confrontation imminent"
+    - "Coalition holds Thornwall - Varek's army surrendered or scattered"
+    - "Solace freed from blood magic, scales turning green, kneeling before Kira"
+    - "Varek fled into the castle interior; Darian in pursuit on Castellan"
+    - "14 dragons + Solace now on Kira's side"
+    - "Blood mage who controlled Solace is down"
+    - "Kira and Cael are together"
+    - "Story in final act - 1-2 chapters remain"
 
 world:
   name: "Valdris"
