@@ -5,10 +5,10 @@
 
 meta:
   title: "Dragonbound"
-  status: "in_progress"
+  status: "complete"
   started: "2026-02-01"
   last_updated: "2026-02-16"
-  total_scenes: 15
+  total_scenes: 16
   genre: "Fantasy Romance"
 
 # CONTINUITY RULES - READ BEFORE WRITING
@@ -29,7 +29,7 @@ characters:
       - "Reads dragons better than anyone"
       - "No family name"
       - "Now carries an illegal bond and forbidden knowledge"
-    current_state: "Led the coalition's assault on Thornwall. Servants opened the gates from within after a two-day uprising. Confronted Solace, the hollow dragon, in the plaza. Rammed Solace with Tempest to jar the blood mage loose. Cael and Ember used pure flame to burn the blood magic from Solace's bond channel, restoring her. Solace knelt before Kira. Varek fled into the castle; Darian pursued him. The city has fallen to the coalition. Only Varek's capture remains."
+    current_state: "Confronted Varek in the throne room. He had killed his own blood mages. Sentenced to exile beyond the Ashlands. Darian renounced the throne, established a council of houses and commons. Solace bonded with a commoner girl named Wren. Kira accepted a seat on the new council. She and Cael are together. Spring has come to Valdris. The story is complete."
     arc: "From invisible servant to political threat"
     
   dragons:
@@ -168,34 +168,28 @@ plot:
       summary: "The servant uprising paralyzes Thornwall for two days. Servants open the southern gate. Darian leads cavalry through. The coalition takes the outer city. Varek unleashes Solace, the hollow dragon, whose corrupted fire dissolves stone and men. Kira rams Solace with Tempest to jar the blood mage loose. Cael leaps onto Solace's back, knocks the mage free, and Ember pours pure flame into the bond channel. The blood magic shatters. Solace's scales turn from black to green. She kneels before Kira. Varek flees into the castle; Darian pursues on Castellan."
       ends_with: "Kira stands with her hand on Solace's scales as the sun rises over a city that has just changed hands. Varek has fled; Darian is in pursuit."
 
+    - scene: 16
+      title: "The Crown of Ashes"
+      file: "2026-02-16-the-crown-of-ashes.md"
+      summary: "Kira finds Varek in the throne room, defeated, having killed his own blood mages. He is sentenced to exile. Darian renounces the throne and establishes a council of houses and commons. Three weeks pass. Solace bonds with a commoner girl named Wren. Marden returns to work as dragon keeper. Spring arrives. Kira accepts a seat on the council. She and Cael watch sixteen dragons fly against a blue sky. The story ends with Kira whistling for Tempest."
+      ends_with: "She whistled, and Tempest came to her."
+
   next_scene_should:
-    - "Darian's pursuit of Varek through the castle - the final confrontation between brothers"
-    - "Varek's last stand - does he have one more blood-magic weapon?"
-    - "What happens to the throne? Darian claims it, renounces it, or something else?"
-    - "Marden's fate - did he survive the uprising?"
-    - "Solace's recovery - she's free but traumatized"
-    - "Kira and Cael's future - the war is ending, what comes next?"
-    - "The commoner bond truth reshapes Valdris forever - epilogue material"
-    - "Story is 1-2 chapters from ending"
+    - "STORY COMPLETE - all threads resolved"
 
   active_threads:
-    - "Darian pursuing Varek into the castle on Castellan - outcome unknown"
-    - "Solace healed but traumatized, kneeling before Kira"
-    - "Coalition holds the city, Varek's soldiers surrendering"
-    - "Marden's fate unknown - last seen leading servants out"
-    - "Red and silver dragons in the pens - still chained?"
-    - "Kira and Cael together; Darian's feelings unresolved"
-    - "Sorrel's seeds - symbolic of what comes after"
-    - "The war is nearly over - denouement approaching"
+    - "None - story complete"
 
   world_state:
-    - "Coalition holds Thornwall - Varek's army surrendered or scattered"
-    - "Solace freed from blood magic, scales turning green, kneeling before Kira"
-    - "Varek fled into the castle interior; Darian in pursuit on Castellan"
-    - "14 dragons + Solace now on Kira's side"
-    - "Blood mage who controlled Solace is down"
-    - "Kira and Cael are together"
-    - "Story in final act - 1-2 chapters remain"
+    - "Varek exiled beyond the Ashlands"
+    - "Darian renounced the throne; council of houses and commons established"
+    - "Solace bonded with Wren, a commoner girl"
+    - "Ashara (red) and Frostbite (silver) freed from pens"
+    - "Marden returned as dragon keeper"
+    - "Kira accepted council seat"
+    - "Kira and Cael together"
+    - "Commoner bonds now legal - new era for Valdris"
+    - "STORY COMPLETE - 16 chapters, Feb 1-16 2026"
 
 world:
   name: "Valdris"
